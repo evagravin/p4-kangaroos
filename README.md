@@ -8,7 +8,7 @@
 | ------------- | ----------- | 
 |Eva Gravin | evagravin |
 |Ava Brooks | avabrooks |
-|Risa Iwazaki | ID |
+|Risa Iwazaki | risaiwazaki |
 |Linda Long | ID |
 
 

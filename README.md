@@ -9,6 +9,6 @@
 |Eva Gravin | evagravin |
 |Ava Brooks | avabrooks |
 |Risa Iwazaki | risaiwazaki |
-|Linda Long | ID |
+|Linda Long | lindalonglong |
 
 

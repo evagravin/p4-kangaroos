@@ -1,4 +1,5 @@
-# p4-kangaroos
+# The Smack
+# _by the p4-kangaroos_
 
 ## [Project Plan](https://docs.google.com/document/d/1iicxZwL0Sfc2mNzfxLqNAFXM357XP-C96Gz30Cukj44/edit)
 

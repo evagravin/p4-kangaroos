@@ -13,9 +13,10 @@
 
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark navbar-survival101">
+
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="/static/TheSlap.png" alt="The Smack">
+            <img src="#" alt="The Smack" >
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -50,11 +51,12 @@
 </nav>
 
 <br>
+<body>
 <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">25% Users Online</div>
 </div>
 
-<section class="caroulsel">
+<section class="caroulsel" id="gradient">
     <div class="caroulsel-wrap">
         <a href="#"></a>
         <a href="#"></a>
@@ -90,51 +92,20 @@
         <a href="#"></a>
     </div>
 </section>
-
-<div class="card border-primary text-center" style="width: 18rem; margin: 2rem;">
-    <div class="card-header">
-        Trending Accounts
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">Name</li>
-            <li class="list-group-item">Name</li>
-            <li class="list-group-item">Name</li>
-            <li class="list-group-item">Name</li>
-        </ul>
-    </div>
-    <div class="card-footer text-muted">
-
-    </div>
-</div>
-
-<div class="card border-primary text-center" style="width: 40rem; margin: 2rem; float: top;">
-    <div class="card-header">
-        Trending Video
-    </div>
-    <div class="card-body">
-        <div class="video-responsive">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FpLBDJw8iJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-
-<div class="card" style="width: 70rem; margin: 2rem;">
-    <div class="card-header">
-        Quote of the Day
-    </div>
-    <div class="card-body">
-        <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-    </div>
-</div>
-
+</body>
+{% block pagecontent %}
+{% endblock %}
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 <style>
+
+body {
+    background: rgb(253,173,45);
+background: linear-gradient(0deg, rgba(253,173,45,1) 0%, rgba(95,34,195,1) 100%);
+
+}
+
     .container {
   max-width: 960px;
 }

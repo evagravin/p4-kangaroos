@@ -10,8 +10,8 @@ TheSmack is an aspiring social media site where users can share messages and emo
 | Name | Github ID |
 | ------------- | ----------- | 
 |Eva Gravin | [Github](https://github.com/evagravin) |
-|Ava Brooks | [Github] avabrooks |
-|Risa Iwazaki | [Github] risaiwazaki |
+|Ava Brooks | [Github](https://github.com/avabrooks) |
+|Risa Iwazaki | [Github](https://github.com/risaiwazaki) |
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
 

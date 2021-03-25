@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 usermenu_bp = Blueprint('usermenu', __name__,
                           template_folder='templates',
@@ -13,10 +13,12 @@ login_bp = Blueprint('login', __name__,)
 def usermenu():
     return "Sign up/Login menu page"
 
-@signup_bp.route('/')
+@signup_bp.route('/signup/')
 def signup():
-    return "Signup page"
+    return render_template("signup.html")
 
-@login_bp.route('/')
+@login_bp.route('/login/')
 def login():
-    return "Login page"
+    return render_template("login.html")
+
+

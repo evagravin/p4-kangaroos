@@ -3,46 +3,80 @@
 {% block pagecontent %}
 {% block title %}
 
-<div class="card border-primary text-center" style="width: 18rem; margin: 2rem;">
-    <div class="card-header">
-        Trending Accounts
-    </div>
-    <div class="card-body">
-        <ul class="list-group">
-            <li class="list-group-item">Name</li>
-            <li class="list-group-item">Name</li>
-            <li class="list-group-item">Name</li>
-            <li class="list-group-item">Name</li>
-        </ul>
-    </div>
-    <div class="card-footer text-muted">
+<div class="row">
 
-    </div>
-</div>
+    <div class="card border-primary text-center col-3" style="width: 18rem; margin: 2rem;">
+        <div class="card-header">
+            Most Recent Smack
+        </div>
+        <div class="card-body">
 
-<div class="card border-primary text-center" style="width: 40rem; margin: 2rem; float: top;">
-    <div class="card-header">
-        Trending Video
-    </div>
-    <div class="card-body">
-        <div class="video-responsive">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FpLBDJw8iJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-footer text-muted">
+
         </div>
     </div>
+
+    <div class="card border-primary text-center col" style="width: 40rem; margin: 2rem; float: top;">
+        <div class="card-header">
+            Trending Video
+        </div>
+        <div class="card-body">
+            <div class="video-responsive">
+                <iframe width="690" height="400" src="https://www.youtube.com/embed/FpLBDJw8iJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
 </div>
 
-<div class="card" style="width: 70rem; margin: 2rem;">
-    <div class="card-header">
-        Quote of the Day
-    </div>
-    <div class="card-body">
-        <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-    </div>
-</div>
 
+<div class="row">
+    <div class="col">
+        <div class="card" style="width: 50rem; height: 10rem; margin: 2rem;">
+            <div class="card-header">
+                Quote of the Day
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="card border-primary text-center" style="width: 40rem; height: 20rem; margin: 2rem;">
+            <div class="card-header">
+                Newest Games
+            </div>
+            <div class="card-body">
+            </div>
+            <div class="card-footer text-muted">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card border-primary text-center col-3" style="width: 22rem; height: 20rem; margin: 2rem;">
+        <div class="card-header">
+            Trending Accounts
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item">Name</li>
+                <li class="list-group-item">Name</li>
+                <li class="list-group-item">Name</li>
+                <li class="list-group-item">Name</li>
+            </ul>
+        </div>
+        <div class="card-footer text-muted">
+
+        </div>
+    </div>
+
+
+</div>
 
 {% endblock %}
 {% endblock %}

@@ -29,6 +29,10 @@ app.register_blueprint(searchresults_bp, url_prefix='/searchresults')
 def home():
     return render_template("home.html")
 
+@app.route('/aboutus')
+def aboutus():
+    return render_template("aboutus.html")
+
 
 
 if __name__ == "__main__":

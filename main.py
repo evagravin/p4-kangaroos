@@ -2,8 +2,8 @@ from flask import Flask, redirect, url_for, render_template, request, session
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp
-from werkzeug.security import generate_password_hash
-from TheSmack.users.custom import apology, convert
+from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp
+
 
 app = Flask(__name__)
 
@@ -19,6 +19,9 @@ app = Flask(__name__)
 app.register_blueprint(usermenu_bp, url_prefix='/usermenu')
 app.register_blueprint(signup_bp, url_prefix='/signup')
 app.register_blueprint(login_bp, url_prefix='/login')
+app.register_blueprint(trending_bp, url_prefix='/trending')
+app.register_blueprint(createSmack_bp, url_prefix='/createmack')
+app.register_blueprint(smackDM_bp, url_prefix='/smackDM')
 
 #home page route
 @app.route('/')

@@ -24,8 +24,6 @@ def usermenu():
 
 @signup_bp.route('/')
 def signup():
-
-
     """Register user"""
     if request.method == "POST":
         # Make sure they put in their username

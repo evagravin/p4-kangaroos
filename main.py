@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp
-from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp, searchresults_bp
+from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp
 from TheSmack.minilabs.app import ava_minilab_bp, risa_minilab_bp, eva_minilab_bp, linda_minilab_bp, minilabMenu_bp
 
 
@@ -29,15 +29,14 @@ app.register_blueprint(risa_minilab_bp, url_prefix='/risaminilab')
 app.register_blueprint(linda_minilab_bp, url_prefix='/lindaminilab')
 app.register_blueprint(eva_minilab_bp, url_prefix='/evaminilab')
 app.register_blueprint(minilabMenu_bp, url_prefix='/minilabmenu')
+app.register_blueprint(aboutus_bp, url_prefix='/aboutus')
 
 #home page route
 @app.route('/')
 def home():
     return render_template("home.html")
 
-@app.route('/aboutus')
-def aboutus():
-    return render_template("aboutus.html")
+
 
 
 

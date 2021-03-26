@@ -9,6 +9,7 @@ TheSmack is an aspiring social media site where users can share messages and emo
 
 ## [Scrum Board](https://github.com/evagravin/p4-kangaroos/projects/1)
 
+Download our project via Intellij to view our blueprint layout and run our website or view the Github files!
 
 
 ## Table of Collaborators:

@@ -31,7 +31,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 ### Risa:
 - In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57226174)
 - Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57546949)
-- [Github Commit]() Towards In Progress Story/Ticket
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/bc9ff513d9388e85d6c92989e10d238d916da396) Towards In Progress Story/Ticket
 - [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/0b5f4303f0374b657593720c84095c7e371407ec) Toward Mini Lab
 
 ### Eva:

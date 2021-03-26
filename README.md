@@ -43,8 +43,8 @@ Download our project via Intellij to view our blueprint layout and run our websi
 ### Linda:
 - In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57458729)
 - Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57546498)
-- [Github Commit]() Towards In Progress Story/Ticket
-- [Github Commit]() Toward Mini Lab
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/blob/main/templates/aboutus.html) Towards In Progress Story/Ticket
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/linda-minilab.html) Toward Mini Lab
 
 
 ### Everyone:

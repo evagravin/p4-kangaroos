@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 
 
@@ -18,6 +18,13 @@ searchresults_bp = Blueprint('searchresults', __name__,
                        template_folder='templates',
                        static_folder='static')
 
+aboutus_bp = Blueprint('aboutus', __name__,
+                       template_folder='templates',
+                       static_folder='static')
+
+@aboutus_bp.route('/')
+def aboutus():
+    return render_template ("aboutus.html")
 
 @trending_bp.route('/')
 def trending():

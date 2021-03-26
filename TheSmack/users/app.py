@@ -15,11 +15,16 @@ signup_bp = Blueprint('signup', __name__,
 login_bp = Blueprint('login', __name__,
                      template_folder='templates')
 
+profile_bp = Blueprint('profile', __name__,
+                     template_folder='templates')
 
 @usermenu_bp.route('/')
 def usermenu():
     return "Sign up/Login menu page"
 
+@profile_bp.route('/')
+def profile():
+    return "Profile page"
 
 @signup_bp.route('/')
 def signup():

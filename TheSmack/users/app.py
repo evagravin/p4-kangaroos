@@ -1,5 +1,4 @@
-from flask import Flask, redirect, url_for, render_template, request, session, Blueprint, app
-from flask_sqlalchemy import SQLAlchemy
+from flask import redirect, url_for, render_template, request, session, Blueprint
 from sqlalchemy.sql import text
 from werkzeug.security import generate_password_hash
 from TheSmack.users.custom import apology, convert

@@ -47,6 +47,10 @@ Download our project via Intellij to view our blueprint layout and run our websi
 - [Github Commit]() Toward Mini Lab
 
 
+### Everyone:
+- [Story/Ticket 1](https://github.com/evagravin/p4-kangaroos/projects/1#card-57226374)
+- [Story/Ticket 2 - Project Plan](https://github.com/evagravin/p4-kangaroos/projects/1#card-57547049)
+
 ## College Board / Teacher Requirements (Track to Meeting Them)
 
 | Big Idea Number / Requirement           | Big Idea Summary  | Project Goal To Meet Each Requirement |

@@ -1,5 +1,4 @@
-from flask import Flask, redirect, url_for, render_template, request, session, Blueprint, app
-from flask_sqlalchemy import SQLAlchemy
+from flask import redirect, url_for, render_template, request, session, Blueprint
 from sqlalchemy.sql import text
 from werkzeug.security import generate_password_hash
 from TheSmack.users.custom import apology, convert
@@ -16,11 +15,16 @@ signup_bp = Blueprint('signup', __name__,
 login_bp = Blueprint('login', __name__,
                      template_folder='templates')
 
+profile_bp = Blueprint('profile', __name__,
+                     template_folder='templates')
 
 @usermenu_bp.route('/')
 def usermenu():
     return "Sign up/Login menu page"
 
+@profile_bp.route('/')
+def profile():
+    return "Profile page"
 
 @signup_bp.route('/')
 def signup():

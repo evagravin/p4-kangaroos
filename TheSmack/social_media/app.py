@@ -1,5 +1,4 @@
-from flask import Flask, redirect, url_for, render_template, request, session, Blueprint, app
-from flask_sqlalchemy import SQLAlchemy
+from flask import Blueprint
 
 
 
@@ -15,10 +14,18 @@ smackDM_bp = Blueprint('smackDM', __name__,
                            template_folder='templates',
                            static_folder='static')
 
+searchresults_bp = Blueprint('searchresults', __name__,
+                       template_folder='templates',
+                       static_folder='static')
+
 
 @trending_bp.route('/')
 def trending():
     return "Trending Page"
+
+@searchresults_bp.route('/')
+def results():
+    return "Search results page"
 
 
 @createSmack_bp.route('/')

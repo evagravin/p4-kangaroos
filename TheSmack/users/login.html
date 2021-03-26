@@ -6,7 +6,7 @@
  using JS to add novalidate into the form attribute so that we can use HTML5 validation as a fallback if someone is not allowing JS on their page.
 -->
 
-<form action="/login" method="POST" id="sign-up">
+<form action="/login/" method="POST" id="sign-up">
     <h1>Login</h1>
     <fieldset>
         <!-- made these fields required -->
@@ -86,7 +86,7 @@
     form.setAttribute('novalidate', 'novalidate');
 
 
-/* #1 problem for people is passwords. Sometimes they fatfinger their phone or keyboard and mis-type their password and cannot get into their account. This functionality lets them see what they typed. Passwords are just obsured, not encrypted and not more secure than a regular text box. Good practice is to store them with a hash in a db */
+/* #1 problem for people is passwords */
     //event listener for a password viewing toggle.
     show.addEventListener('click', function(){
         //the keyword: this is the item that was clicked. this can be used in other context and can be tricky. Use with care.

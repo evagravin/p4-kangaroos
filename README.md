@@ -20,6 +20,16 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Risa Iwazaki | [Github](https://github.com/risaiwazaki) |
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
+## Individual Progress Week of 3/26-26
+
+### Ava:
+
+### Risa:
+
+### Eva:
+
+### Linda:
+
 
 ## College Board / Teacher Requirements (Track to Meeting Them)
 

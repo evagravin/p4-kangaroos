@@ -33,7 +33,7 @@ app.register_blueprint(aboutus_bp, url_prefix='/aboutus')
 
 #home page route
 @app.route('/')
-def home():
+def index():
     return render_template("home.html")
 
 

@@ -5,7 +5,7 @@ TheSmack is an aspiring social media site where users can share messages and emo
 
 ## [Project Plan](https://docs.google.com/document/d/1iicxZwL0Sfc2mNzfxLqNAFXM357XP-C96Gz30Cukj44/edit)
 
-## [TheSmack Website URL]()
+## [TheSmack Website URL](http://goodtunes.cf/)
 
 ## [Scrum Board](https://github.com/evagravin/p4-kangaroos/projects/1)
 
@@ -25,13 +25,13 @@ Download our project via Intellij to view our blueprint layout and run our websi
 ### Ava:
 - In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57225859)
 - Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57744261)
-- [Github Commit]() Towards In Progress Story/Ticket
-- [Github Commit]() Toward Mini Lab
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/425ea494f7832df62c3e75edd081d86ab8582ab2) Towards In Progress Story/Ticket
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/6a21149482fbf045f9c72e3e286ea1533efe88a9) Toward Mini Lab
 
 ### Risa:
 - In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57226174)
 - Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57546949)
-- [Github Commit]() Towards In Progress Story/Ticket
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/bc9ff513d9388e85d6c92989e10d238d916da396) Towards In Progress Story/Ticket
 - [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/0b5f4303f0374b657593720c84095c7e371407ec) Toward Mini Lab
 
 ### Eva:
@@ -43,8 +43,8 @@ Download our project via Intellij to view our blueprint layout and run our websi
 ### Linda:
 - In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57458729)
 - Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57546498)
-- [Github Commit]() Towards In Progress Story/Ticket
-- [Github Commit]() Toward Mini Lab
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/blob/main/templates/aboutus.html) Towards In Progress Story/Ticket
+- [Github Commit](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/linda-minilab.html) Toward Mini Lab
 
 
 ### Everyone:

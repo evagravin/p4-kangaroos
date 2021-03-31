@@ -34,7 +34,7 @@ def risa_minilab():
 
 @linda_minilab_bp.route('/')
 def linda_minilab():
-    return "Linda's mini lab page"
+    return render_template("/minilabs/linda-minilab.html")
 
 @eva_minilab_bp.route('/')
 def eva_minilab():

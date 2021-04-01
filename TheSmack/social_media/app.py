@@ -21,10 +21,18 @@ searchresults_bp = Blueprint('searchresults', __name__,
 aboutus_bp = Blueprint('aboutus', __name__,
                        template_folder='templates',
                        static_folder='static')
+smackmenu_bp = Blueprint('smackmenu', __name__,
+                         template_folder='templates',
+                         static_folder='static')
 
 @aboutus_bp.route('/')
 def aboutus():
     return render_template ("aboutus.html")
+
+@smackmenu_bp.route('/')
+def smackmenu():
+    return "Smack menu"
+
 
 @trending_bp.route('/')
 def trending():

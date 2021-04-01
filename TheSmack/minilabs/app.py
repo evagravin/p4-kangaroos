@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 minilabMenu_bp = Blueprint('minilab Menu', __name__,
                            template_folder='templates',
@@ -26,7 +26,7 @@ def minilabMenu():
 
 @ava_minilab_bp.route('/')
 def ava_minilab():
-    return "Ava's mini lab page"
+    return render_template("/minilabs/ava-minilab.html")
 
 @risa_minilab_bp.route('/')
 def risa_minilab():
@@ -34,10 +34,10 @@ def risa_minilab():
 
 @linda_minilab_bp.route('/')
 def linda_minilab():
-    return "Linda's mini lab page"
+    return render_template("/minilabs/linda-minilab.html")
 
 @eva_minilab_bp.route('/')
 def eva_minilab():
-    return "Eva's mini lab page"
+    return render_template("/minilabd/eva-minilab.html")
 
 

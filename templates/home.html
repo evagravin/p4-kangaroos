@@ -2,6 +2,13 @@
 {% extends "layout.html" %}
 {% block pagecontent %}
 {% block title %}
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">Welcome To TheSmack!</h1>
+        </header>
+    </div>
+
 
 <div class="row">
 
@@ -33,7 +40,7 @@
 
 <div class="row">
     <div class="col">
-        <div class="card" style="width: 50rem; height: 10rem; margin: 2rem;">
+        <div class="card" style="width: 35rem; height: 13rem; margin: 2rem;">
             <div class="card-header">
                 Quote of the Day
             </div>
@@ -45,20 +52,9 @@
             </div>
         </div>
 
-        <div class="card border-primary text-center" style="width: 40rem; height: 20rem; margin: 2rem;">
-            <div class="card-header">
-                Newest Games
-            </div>
-            <div class="card-body">
-            </div>
-            <div class="card-footer text-muted">
-
-            </div>
-        </div>
-
     </div>
 
-    <div class="card border-primary text-center col-3" style="width: 22rem; height: 20rem; margin: 2rem;">
+    <div class="card border-primary text-center col-3" style="width: 22rem; height: 20rem; margin: 5rem;">
         <div class="card-header">
             Trending Accounts
         </div>
@@ -74,9 +70,10 @@
 
         </div>
     </div>
-
+</div>
 
 </div>
+
 
 {% endblock %}
 {% endblock %}

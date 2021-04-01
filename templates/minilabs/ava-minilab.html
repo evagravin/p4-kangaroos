@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block pagecontent %}
+<style>
+
+
+</style>
+
+<html>
+<body>
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">Mini Lab</h1>
+        </header>
+    </div>
+<form method="POST" ID="myForm" action=# class="form1">
+    <p>
+        <label for="Numbers" class="pt-5 text-white">List</label>
+        <input id="Numbers" name="Numbers" placeholder="Enter List" type="text" required="required">
+    </p>
+
+    <p>
+
+        <input type="submit" class="button button-primary" value="Compute!">
+    </p>
+</form>
+</div>
+</body>
+</html>
+
+
+{% endblock %}

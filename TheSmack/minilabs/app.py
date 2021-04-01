@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 
 minilabMenu_bp = Blueprint('minilab Menu', __name__,
                            template_folder='templates',
@@ -24,8 +24,10 @@ eva_minilab_bp = Blueprint('eva-minilab', __name__,
 def minilabMenu():
     return "Menu for all of the group's individual mini labs"
 
-@ava_minilab_bp.route('/')
+@ava_minilab_bp.route('/' , methods=['GET', 'POST'])
 def ava_minilab():
+    if request.method=='POST':
+        print("posting")
     return render_template("/minilabs/ava-minilab.html")
 
 @risa_minilab_bp.route('/')

@@ -1,192 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Smack</title>
+    <title>Chess Offline</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="main.css" type="text/css" rel="stylesheet"/>
+    <!-- scripts for navbar/menu-->
     <script type="text/javascript" src="klassenlijst.js"></script>
     <script type="text/javascript" src="hamburger.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
 </head>
-<!--<div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>-->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-survival101">
 
-    <div class="container">
-        <a class="navbar-brand" href="/">
-            <img src="#" alt="The Smack" >
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<!-- Navbar-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container"><a href="/" class="navbar-brand text-uppercase font-weight-bold">The Smack</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/trending">Trending</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/smackDM">Smack Another User</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/createsmack">Create a Smack</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="/usermenu">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/aboutus">About Us</a>
-                </li>
-
-                <!--form class="form-inline my-2 my-lg-0"> <input class="form-control mr-sm-2" type="text" placeholder="Search"> <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button> </form-->
-            </ul>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="/trending" class="nav-link text-uppercase font-weight-bold">Trending</a></li>
+                    <li class="nav-item"><a href="/smackmenu" class="nav-link text-uppercase font-weight-bold">Create a Smack</a></li>
+                    <li class="nav-item"><a href="/aboutus" class="nav-link text-uppercase font-weight-bold">About Us</a></li>
+                    <li class="nav-item"><a href="/login" class="nav-link text-uppercase font-weight-bold">Login</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+</header>
 
-    </div>
 
-</nav>
-
-<br>
-<body>
-<div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">25% Users Online</div>
-</div>
-
-<section class="caroulsel" id="gradient">
-    <div class="caroulsel-wrap">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-    </div>
-</section>
-</body>
 {% block pagecontent %}
 {% endblock %}
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
 <style>
+    .navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
 
 body {
+    min-height: 110vh;
     background: rgb(253,173,45);
-background: linear-gradient(0deg, rgba(253,173,45,1) 0%, rgba(95,34,195,1) 100%);
-
+    background-image: linear-gradient(0deg, rgba(253,173,45,1) 0%, rgba(95,34,195,1) 100%);
 }
 
-    .container {
-  max-width: 960px;
-}
-.navbar-survival101 {
-  background-color:#6517c4;
-}
-/* .navbar-survival101 .navbar-brand {
-  margin-right: 2.15rem;
-  padding: 3px 0 0 0;
-  line-height: 36px;
-} */
-
-.navbar-survival101 .navbar-brand img {
-  vertical-align: baseline;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
-}
-
-.search-box {
-  position: relative;
-  height: 34px;
-}
-.search-box input {
-  border: 0;
-  border-radius: 3px !important;
-  padding-right: 28px;
-  font-size: 15px;
-}
-
-.search-box .input-group-btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 999;
-}
-
-.search-box .input-group-btn button {
-  background-color: transparent;
-  border: 0;
-  padding: 4px 8px;
-  color: rgba(0,0,0,.4);
-  font-size: 20px;
-}
-
-.search-box .input-group-btn button:hover,
-.search-box .input-group-btn button:active,
-.search-box .input-group-btn button:focus {
-  color: rgba(0,0,0,.4);
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: .7rem;
-    padding-left: .7rem;
-  }
-
-  .search-box {
-    width: 300px !important;
-  }
-}
-
-.caroulsel {
-  width: 100%;
-  overflow: hidden;
-  padding: 5px 0 5px 5px;
-}
-
-.caroulsel-wrap {
-  white-space: nowrap;
-  font-size: 0;
-}
-
-.caroulsel-wrap a {
-  display: inline-block;
-  width: 134px;
-  height: 92px;
-  background-color: silver;
-  border: #ccc 1px solid;
-  margin-right: 5px;
-}
-
-Resources
 </style>
+<script type="text/javascript">
+$(function () {
+    $(window).on('scroll', function () {
+        if ( $(window).scrollTop() > 10 ) {
+            $('.navbar').addClass('active');
+        } else {
+            $('.navbar').removeClass('active');
+        }
+    });
+});
+</script>
+
+

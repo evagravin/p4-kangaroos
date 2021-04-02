@@ -1,4 +1,6 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
+from TheSmack.minilabs.ava_minilab import math
+
 
 minilabMenu_bp = Blueprint('minilab Menu', __name__,
                            template_folder='templates',
@@ -24,9 +26,21 @@ eva_minilab_bp = Blueprint('eva-minilab', __name__,
 def minilabMenu():
     return "Menu for all of the group's individual mini labs"
 
-@ava_minilab_bp.route('/')
+@ava_minilab_bp.route('/' , methods=['GET', 'POST'])
 def ava_minilab():
-    return render_template("/minilabs/ava-minilab.html")
+    mean = 0
+    median = 0
+    mode = 0
+    list = ""
+    if request.method == 'POST':
+        values = request.form['list']
+        m = math()
+        m.addValues(values)
+        mean = m.getAverage()
+        median = m.getMedian()
+        mode = m.getMode()
+        list = m.getList()
+    return render_template("/minilabs/ava-minilab.html", mean=mean, median=median, mode=mode, list=list)
 
 @risa_minilab_bp.route('/')
 def risa_minilab():
@@ -38,6 +52,6 @@ def linda_minilab():
 
 @eva_minilab_bp.route('/')
 def eva_minilab():
-    return render_template("/minilabd/eva-minilab.html")
+    return render_template("/minilabs/eva-minilab.html")
 
 

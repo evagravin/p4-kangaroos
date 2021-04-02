@@ -26,17 +26,17 @@
 </form>
 <br>
 <br>
-    <table class="container" style="whitespace: nowrap;">
+    <table class="container">
         <thead>
-        <tr>
-            <th><h1>List</h1></th>
-            <th><h1>Mean</h1></th>
-            <th><h1>Median</h1></th>
-            <th><h1>Mode</h1></th>
+        <tr style="word-break:break-all">
+            <th width="400px"><h1>List</h1></th>
+            <th width="125px"><h1>Mean</h1></th>
+            <th width="125px"><h1>Median</h1></th>
+            <th width="125px"><h1>Mode</h1></th>
         </tr>
         </thead>
         <tbody>
-        <tr>
+        <tr style="word-break:break-all;">
             <td>{{list}}</td>
             <td>{{mean}}</td>
             <td>{{median}}</td>
@@ -93,7 +93,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  line-height: 1.42em;
   color:#ffffff;
   background-color:#1F2739;
 }
@@ -125,7 +124,7 @@ h2 a {
 .container {
 	  text-align: left;
 	  overflow: hidden;
-	  width: 80%;
+	  width: 1000px;
 	  margin: 0 auto;
   display: table;
   padding: 0 0 8em 0;

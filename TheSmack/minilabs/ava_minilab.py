@@ -5,7 +5,8 @@ class math:
         self._lst=[]
 
     def getAverage(self):
-        return sum(self._lst) / len(self._lst)
+        mean = sum(self._lst) / len(self._lst)
+        return round(mean, 2)
 
 
     def addValue(self, value):

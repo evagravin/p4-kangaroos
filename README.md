@@ -20,6 +20,15 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Risa Iwazaki | [Github](https://github.com/risaiwazaki) |
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
+## Individual Mini-Labs
+### Ava: 
+ - Binary Grading:
+     1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
+     2. Enhance or Define a Class to manage a complex data set
+     3. Create an Object from a Class in Python. 
+     4. Display data or enhanced data from this Python Object on a Web Page using "getters".
+     5. Highlight WOW or insight in doing this project.  (ie Mastery Show adding timing to Class to Displaying it on Web) 
+ - Project concept: Display mean, median, mode of any data set
 ## Individual Work Week of 3/26-26
 
 ### Ava:

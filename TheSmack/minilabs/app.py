@@ -50,7 +50,7 @@ def risa_minilab():
 def linda_minilab():
     return render_template("/minilabs/linda-minilab.html")
 
-@eva_minilab_bp.route('/')
+@eva_minilab_bp.route('/' , methods=['GET', 'POST'])
 def eva_minilab():
     return render_template("/minilabs/eva-minilab.html")
 

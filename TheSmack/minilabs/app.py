@@ -40,6 +40,6 @@ def linda_minilab():
 
 @eva_minilab_bp.route('/')
 def eva_minilab():
-    return render_template("/minilabd/eva-minilab.html")
+    return render_template("/minilabs/eva-minilab.html")
 
 

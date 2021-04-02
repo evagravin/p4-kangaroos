@@ -22,13 +22,23 @@ Download our project via Intellij to view our blueprint layout and run our websi
 
 ## Individual Mini-Labs
 ### Ava: 
+ - Project concept: Display mean, median, mode of any data set that a user enters
  - Binary Grading:
      1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
+          - Blueprint route [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/app.py#L9-L12), is called in main.py [here](https://github.com/evagravin/p4-kangaroos/blob/main/main.py#L30)
      2. Enhance or Define a Class to manage a complex data set
+          - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L3)
      3. Create an Object from a Class in Python. 
+          - Different Objects [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L4-L31) that calculate mean, median, mode of entered data set
      4. Display data or enhanced data from this Python Object on a Web Page using "getters".
-     5. Highlight WOW or insight in doing this project.  (ie Mastery Show adding timing to Class to Displaying it on Web) 
- - Project concept: Display mean, median, mode of any data set
+          - Displayed as a table [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/ava-minilab.html#L29-L44) using jinja variables 
+     5. Highlight WOW or insight in doing this project. 
+          - For my class, I created multiple objects [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L7-L31) that each do different tasks. There is a function to calcualte the mean, median, and mode, as well as getting the string that the user inputted and sorting it from least to greatest to be displayed on the front end. 
+
+
+### Risa:
+### Eva:
+### Linda:
 ## Individual Work Week of 3/26-26
 
 ### Ava:

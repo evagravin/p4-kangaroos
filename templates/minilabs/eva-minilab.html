@@ -12,22 +12,21 @@
             <h1 class="display-4">( _ x + _ ) ( _ x + _ )</h1>
         </header>
     </div>
-    <form method="POST" ID="myForm" action=/evaminilab class="form1">
+    <form method="POST" ID="foilform" action="/minilab/eva">
         <p>
             <label for="num1" class="pt-5 text-white">1st Number:</label>
-            <input id="num1" name="list" placeholder="Enter" type="number" min="1" max="3" required="required">
-        </p>
+            <input id="num1" name="num1" placeholder="Enter" type="number" min="1" max="5" required="required">
         <p>
             <label for="num2" class="pt-5 text-white">2nd Number:</label>
-            <input id="num2" name="list" placeholder="Enter" type="number" min="1" max="3" required="required">
+            <input id="num2" name="num2" placeholder="Enter" type="number" min="1" max="5" required="required">
         </p>
         <p>
             <label for="num3" class="pt-5 text-white">3rd Number:</label>
-            <input id="num3" name="list" placeholder="Enter" type="number" min="1" max="3" required="required">
+            <input id="num3" name="num3" placeholder="Enter" type="number" min="1" max="5" required="required">
         </p>
         <p>
             <label for="num4" class="pt-5 text-white">4th Number:</label>
-            <input id="num4" name="list" placeholder="Enter" type="number" min="1" max="3" required="required">
+            <input id="num4" name="num4" placeholder="Enter" type="number" min="1" max="5" required="required">
         </p>
         <p>
             <button class="button"><span>Compute!</span></button>
@@ -35,7 +34,7 @@
     </form>
     <br>
     <br>
-    <h1 class="display-4">( {{num1}} x + {{num2}} ) ( {{num3}} x + {{num4}} )   =   </h1>
+    <h1 class="display-4">( {{foil.num1}} x + {{foil.num2}} ) ( {{foil.num3}} x + {{foil.num4}} )   =   {{foil.term1}}x^2 + {{foil.term2}}x + {{foil.term3}}x + {{foil.term4}}</h1>
 
 </div>
 </body>

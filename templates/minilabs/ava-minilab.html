@@ -16,13 +16,18 @@
     </div>
 <form method="POST" ID="myForm" action=# class="form1">
     <p>
-        <label for="Numbers" class="pt-5 text-white">List</label>
-        <input id="Numbers" name="Numbers" placeholder="Enter List" type="text" required="required">
+        <label for="list" class="pt-5 text-white">List</label>
+        <input id="list" name="list" placeholder="Enter List" type="text" required="required">
     </p>
-
     <p>
 
         <input type="submit" class="button button-primary" value="Compute!">
+    </p>
+
+    <p> List: {{list}}
+        Mean: {{mean}}
+        Median: {{median}}
+        Mode: {{mode}}
     </p>
 </form>
 </div>

@@ -42,7 +42,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
      1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
           - Blueprint route [here](https://github.com/evagravin/p4-kangaroos/blob/cc10d4976181095d6b97f846d0bd3ea86b06212b/TheSmack/minilabs/app.py#L39)
      2. Enhance or Define a Class to manage a complex data set
-          - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/cc10d4976181095d6b97f846d0bd3ea86b06212b/TheSmack/minilabs/eva_minilab.py#L1)
+          - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/ba99261e1963ed2b0d72c5a558b618919aa6b7ed/TheSmack/minilabs/eva_minilab.py#L1-L10)
      3. Create an Object from a Class in Python. 
           - Object "Foil" [here](https://github.com/evagravin/p4-kangaroos/blob/cc10d4976181095d6b97f846d0bd3ea86b06212b/TheSmack/minilabs/eva_minilab.py#L46) that is the instance of the class.
      4. Display data or enhanced data from this Python Object on a Web Page using "getters".

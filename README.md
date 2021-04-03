@@ -25,7 +25,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
  - Project concept: Display mean, median, mode of any data set that a user enters
  - Binary Grading:
      1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
-          - Blueprint route [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/app.py#L9-L12), is called in main.py [here](https://github.com/evagravin/p4-kangaroos/blob/main/main.py#L30)
+          - Blueprint route [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/app.py#L17-L31), is called in main.py [here](https://github.com/evagravin/p4-kangaroos/blob/main/main.py#L27)
      2. Enhance or Define a Class to manage a complex data set
           - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L3)
      3. Create an Object from a Class in Python. 
@@ -33,7 +33,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
      4. Display data or enhanced data from this Python Object on a Web Page using "getters".
           - Displayed as a table [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/ava-minilab.html#L29-L44) using jinja variables 
      5. Highlight WOW or insight in doing this project. 
-          - For my class, I created multiple objects [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L7-L31) that each do different tasks. There is a function to calcualte the mean, median, and mode, as well as getting the string that the user inputted and sorting it from least to greatest to be displayed on the front end. 
+          - For my class, I created multiple objects [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L7-L31) that each do different tasks. There is a function to calcualte the mean, median, and mode, as well as getting the string that the user inputted and sorting it from least to greatest to be displayed on the front end. For the front end, I created an interactive table that allows users to hover over the value and have it pop out a bit more. 
 
 ### Risa:
 ### Eva:

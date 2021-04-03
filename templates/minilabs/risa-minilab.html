@@ -17,7 +17,7 @@
     </div>
     <form method="POST" ID="myForm" action=/minilab/risa class="form1">
         <p>
-            <label for="temp1" class="pt-5 text-white">Weight:</label>
+            <label for="temp1" class="pt-5 text-white">Temperature:</label>
             <input id="temp1" name="temp1" placeholder="Enter Temperature" type="text" required="required">
             <label for="temp1" class="pt-5 text-white">Fahrenheit</label>
         </p>
@@ -25,7 +25,7 @@
         <button class="button"><span>Compute!</span></button>
         </p>
 
-        <h1 class="display-4">({{calc1.temp1}} =  {{calc1.answer1}})</h1>
+        <h1 class="display-4" id="equation">({{calc1.temp1}}  =   {{calc1.answer1}})</h1>
 
         <p>
             <label for="weight2" class="pt-5 text-white">Weight:</label>

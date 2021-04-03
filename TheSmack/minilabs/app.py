@@ -33,7 +33,7 @@ def ava_minilab():
 def risa_minilab():
     return "Risa's mini lab page"
 
-@minilab_bp.route('/linda')
+@minilab_bp.route('/linda' , methods=['GET', 'POST'])
 def linda_minilab():
     if request.method == 'POST':
         num1 = int(request.form['num1'])

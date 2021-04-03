@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, request
 from TheSmack.minilabs.ava_minilab import math
 from TheSmack.minilabs.eva_minilab import Foil
+from TheSmack.minilabs.risa_minilab import Calc1
+
 
 
 minilab_bp = Blueprint('minilab Menu', __name__,
@@ -28,9 +30,19 @@ def ava_minilab():
         list = m.getList()
     return render_template("/minilabs/ava-minilab.html", mean=mean, median=median, mode=mode, list=list)
 
-@minilab_bp.route('/risa')
+
+
+
+@minilab_bp.route('/risa' , methods=['GET', 'POST'])
 def risa_minilab():
-    return "Risa's mini lab page"
+    if request.method == 'POST':
+        temp1 = int(request.form['temp1'])
+        calc1 = Calc1(temp1)
+        print(f"{calc1.answer1}")
+        return render_template("/minilabs/risa-minilab.html", calc1=calc1)
+    return render_template("/minilabs/risa-minilab.html", calc1=Calc1 )
+
+
 
 @minilab_bp.route('/linda')
 def linda_minilab():

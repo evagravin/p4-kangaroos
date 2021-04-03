@@ -10,7 +10,6 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: "Times", sans-serif;
         }
 
         body_about {
@@ -55,7 +54,7 @@
             align-content: center;
             object-fit: cover;
             display: block;
-            border-radius: 10px;
+            border-radius: 20px;
             position: relative;
         }
 
@@ -81,11 +80,15 @@
             opacity: 1;
             height: 100%;
         }
+
     </style>
 </head>
-<body style="background-color: #59ABE3"></body>
+
 
 <br>
+<div class="container">
+    <div class="pt-5 text-white">
+
 <h1 style="font-family: Palatino; color: white; text-align: center">Meet the Kangaroos</h1>
 <br>
 <br>
@@ -93,18 +96,19 @@
 <div class="cards_about">
     <div class="card_about">
         <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fab fa-html5"></i>Eva Gravin</h2>
-        <img class="center" src="/static/eva.jpg" alt="">
-        <p class="card-desc_about">Hey users! </p>
+        <img class="center" src="/static/EvaGravin.jpg" alt="">
+        <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fas fa-database"></i><a href="/minilab/eva">Mini Lab</a></h2>
+        <p class="card-desc_about">Hey users! Eva is a junior in Computer Science Principles who enjoys coding to solve problems and the creative aspect when designing frontends.</p>
     </div>
     <div class="card_about">
         <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fab fa-css3-alt"></i>Risa Iwazaki</h2>
-        <img class="center" src="/static/risa.jpg" alt="">
-        <p class="card-desc_about">Hi!</p>
+        <img class="center" src="/static/RisaIwazaki.jpg" alt="">
+        <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fas fa-database"></i><a href="/minilab/risa">Mini Lab</a></h2>
     </div>
     <div class="card_about">
         <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fas fa-database"></i>Ava Brooks</h2>
-        <img class="center" src="/static/ava.jpg" alt="">
-        <p class="card-desc_about">Hello.</p>
+        <img class="center" src="/static/AvaBrooks.jpg" alt="">
+        <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fas fa-database"></i><a href="/minilab/ava">Mini Lab</a></h2>
     </div>
     <div class="card_about">
         <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fas fa-code"></i>Linda Long</h2>
@@ -113,4 +117,7 @@
     </div>
 
 </div>
+    </div>
+</div>
+
 {% endblock %}

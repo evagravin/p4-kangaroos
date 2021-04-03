@@ -1,6 +1,9 @@
 from flask import Blueprint, render_template, request
 from TheSmack.minilabs.ava_minilab import math
 from TheSmack.minilabs.eva_minilab import Foil
+from TheSmack.minilabs.risa_minilab import Calc1
+from TheSmack.minilabs.risa_minilab import Calc2
+from TheSmack.minilabs.risa_minilab import Calc3
 from TheSmack.minilabs.linda_minilab import Sum
 
 
@@ -29,9 +32,21 @@ def ava_minilab():
         list = m.getList()
     return render_template("/minilabs/ava-minilab.html", mean=mean, median=median, mode=mode, list=list)
 
-@minilab_bp.route('/risa')
+@minilab_bp.route('/risa' , methods=['GET', 'POST'])
 def risa_minilab():
-    return "Risa's mini lab page"
+    if request.method == 'POST':
+        temp1 = int(request.form['temp1'])
+        calc1 = Calc1(temp1)
+        print(f"{calc1.answer1}")
+        weight2 = int(request.form['weight2'])
+        calc2 = Calc2(weight2)
+        print(f"{calc2.answer2}")
+        length3 = int(request.form['length3'])
+        calc3 = Calc3(length3)
+        print(f"{calc3.answer3}")
+        return render_template("/minilabs/risa-minilab.html", calc1=calc1, calc2=calc2, calc3=Calc3)
+    return render_template("/minilabs/risa-minilab.html", calc1=Calc1, calc2=Calc2, calc3=Calc3 )
+
 
 @minilab_bp.route('/linda')
 def linda_minilab():

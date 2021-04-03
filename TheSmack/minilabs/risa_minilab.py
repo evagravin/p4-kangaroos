@@ -1,7 +1,9 @@
 class Calc1:
+
     def __init__(self, temp1):
         self._temp1 = temp1
         self._answer1 = (self.temp1 - 32) * 5/9
+
     @property
     def temp1(self):
         return self._temp1

@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template, request
 from TheSmack.minilabs.ava_minilab import math
 from TheSmack.minilabs.eva_minilab import Foil
-from TheSmack.minilabs.linda_minilab import Sum
 
 
 minilab_bp = Blueprint('minilab Menu', __name__,
@@ -33,15 +32,9 @@ def ava_minilab():
 def risa_minilab():
     return "Risa's mini lab page"
 
-@minilab_bp.route('/linda' , methods=['GET', 'POST'])
+@minilab_bp.route('/linda')
 def linda_minilab():
-    if request.method == 'POST':
-        num1 = int(request.form['num1'])
-        num2 = int(request.form['num2'])
-        sum = Sum(num1, num2)
-        print(f"{sum.term1}")
-        return render_template("/minilabs/linda-minilab.html", sum=sum)
-    return render_template("/minilabs/linda-minilab.html", sum=Sum(0,0))
+    return render_template("/minilabs/linda-minilab.html")
 
 @minilab_bp.route('/eva' , methods=['GET', 'POST'])
 def eva_minilab():

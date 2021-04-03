@@ -35,11 +35,25 @@
     <br>
     <br>
     <h1 class="display-4">Results:</h1>
-    <h1 class="display-4">( {{foil.num1}} x + {{foil.num2}} )( {{foil.num3}} x + {{foil.num4}} )   =   {{foil.term1}}x^2 + {{foil.term2}}x + {{foil.term3}}x + {{foil.term4}}</h1>
+    <h1 class="display-4" id="equation">( {{foil.num1}} x + {{foil.num2}} )( {{foil.num3}} x + {{foil.num4}} )   =   {{foil.term1}}x^2 + {{foil.term2}}x + {{foil.term3}}x + {{foil.term4}}</h1>
+    <br>
+    <button type="button" class="btn" onclick="myFunction()" style="float: center; margin: 4px;">Hightlight Equation</button>
+    <button type="button" class="btn" onclick="my2Function()" style="float: center; margin: 4px;">Revert</button>
 
 </div>
 </body>
 </html>
+
+<script type="text/javascript">
+    function myFunction() {
+        document.getElementById("equation").style.backgroundColor = "yellow";
+    }
+
+    function my2Function() {
+        document.getElementById("equation").style.backgroundColor = "#ffffff00";
+    }
+</script>
+
 <style>
 .button {
   border-radius: 4px;

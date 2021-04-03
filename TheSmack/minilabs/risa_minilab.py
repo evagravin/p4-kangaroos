@@ -28,6 +28,7 @@ class Calc3:
     def __init__(self, length3):
         self._length3 = length3
         self._answer3 = (self.length3 * 2.54)
+
     @property
     def length3(self):
         return self._length3

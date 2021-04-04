@@ -22,6 +22,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 
 ## Individual Mini-Labs
 ### Ava: 
+ - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57952437)
  - Project concept: Display mean, median, mode of any data set that a user enters
  - Binary Grading:
      1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.

@@ -37,6 +37,20 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - For my class, I created multiple objects [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L7-L31) that each do different tasks. There is a function to calcualte the mean, median, and mode, as well as getting the string that the user inputted and sorting it from least to greatest to be displayed on the front end. For the front end, I created an interactive table that allows users to hover over the value and have it pop out a bit more. 
 
 ### Risa:
+ - Project Concept: The user will be able to compute American measurements to International measurements. 
+ - Binary Grading: 
+      1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
+           - Blueprint route [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/app.py#L34)
+      2. Enhance or Define a Class to manage a complex data set
+           - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L1)
+      3. Create an Object from a Class in Python. 
+           - Object "Foil" [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L30) that is the instance of the class and [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L3-L5) that performs the calculations.
+      4. Display data or enhanced data from this Python Object on a Web Page using "getters".
+           - Used Getters [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L7-L13) and displayed the data with Jinja variables.
+      5. Highlight WOW or insight in doing this project. 
+           -   I created multiple classes (Calc1, Calc2, etc.) and defines the objects. There are different 
+      6. Full route in app.py file [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/app.py#L34-L44), backend py file [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/risa_minilab.py), html file [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/risa-minilab.html)
+
 ### Eva:
  - Project concept: The user will enter 4 numbers that will be "foiled" as terms in a binomial multiplication expression.
  - Binary Grading:

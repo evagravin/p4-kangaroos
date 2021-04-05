@@ -3,7 +3,6 @@ from TheSmack.minilabs.ava_minilab import math
 from TheSmack.minilabs.eva_minilab import Foil
 from TheSmack.minilabs.risa_minilab import Calc1
 from TheSmack.minilabs.risa_minilab import Calc2
-from TheSmack.minilabs.risa_minilab import Calc3
 from TheSmack.minilabs.linda_minilab import Sum
 
 
@@ -41,11 +40,8 @@ def risa_minilab():
         weight2 = int(request.form['weight2'])
         calc2 = Calc2(weight2)
         print(f"{calc2.answer2}")
-        length3 = int(request.form['length3'])
-        calc3 = Calc3(length3)
-        print(f"{calc3.answer3}")
-        return render_template("/minilabs/risa-minilab.html", calc1=calc1, calc2=calc2, calc3=Calc3)
-    return render_template("/minilabs/risa-minilab.html", calc1=Calc1, calc2=Calc2, calc3=Calc3 )
+        return render_template("/minilabs/risa-minilab.html", calc1=calc1, calc2=calc2)
+    return render_template("/minilabs/risa-minilab.html", calc1=Calc1, calc2=Calc2 )
 
 
 @minilab_bp.route('/linda' , methods=['GET', 'POST'])

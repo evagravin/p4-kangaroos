@@ -41,7 +41,7 @@ def risa_minilab():
         calc2 = Calc2(weight2)
         print(f"{calc2.answer2}")
         return render_template("/minilabs/risa-minilab.html", calc1=calc1, calc2=calc2)
-    return render_template("/minilabs/risa-minilab.html", calc1=Calc1, calc2=Calc2 )
+    return render_template("/minilabs/risa-minilab.html", calc1=Calc1(0), calc2=Calc2(0))
 
 
 @minilab_bp.route('/linda' , methods=['GET', 'POST'])

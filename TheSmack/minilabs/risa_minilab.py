@@ -24,6 +24,19 @@ class Calc2:
     def answer2(self):
         return self._answer2
 
+class Calc3:
+    def __init__(self, distance3):
+        self._distance3 = distance3
+        self._answer3 = (self.distance3 / 1.094)
+    @property
+    def distance3(self):
+        return self._distance3
+
+    @property
+    def answer3(self):
+        return self._answer3
+
+
 
 
 if __name__ == "__main__":
@@ -31,6 +44,9 @@ if __name__ == "__main__":
     print(f"{calc1.answer1}")
     calc2 = Calc2
     print(f"{calc2.answer2}")
+    calc3 = Calc3
+    print(f"{calc3.answer3}")
+
 
 
 

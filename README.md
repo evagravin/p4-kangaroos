@@ -67,6 +67,10 @@ Download our project via Intellij to view our blueprint layout and run our websi
       6. full route in app.py file [here](https://github.com/evagravin/p4-kangaroos/blob/22250c4ff8af6b27939b92073b81753d1e0e1408/TheSmack/minilabs/app.py#L39-L49), backend py file [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/eva_minilab.py), html file [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/eva-minilab.html)
 
 ### Linda: 5/5
+- [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57952599)
+- Project concept: the user will be able to calculate the sum of two numbers. 
+- Binary Grading: 
+
 ## Individual Work Week of 3/26-26
 
 ### Ava: 

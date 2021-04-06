@@ -20,7 +20,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Risa Iwazaki | [Github](https://github.com/risaiwazaki) |
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
-## Individual Mini-Labs
+## Individual Mini-Lab Grading
 ### Ava: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57952437)
  - Project concept: Display mean, median, mode of any data set that a user enters

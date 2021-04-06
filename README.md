@@ -75,7 +75,11 @@ Download our project via Intellij to view our blueprint layout and run our websi
       2. Enhance or Define a Class to manage a complex data set
           - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L1)
       3. Create an Object from a Class in Python. 
-          - Object "Foil" [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L24)
+          - Object "Sum" [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L24) and [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L5) that performs the calculation. 
+      4. Display data or enhanced data from this Python Object on a Web Page using "getters".
+           - Used Getters [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L8-L19) and displayed the data with Jinja variables.
+      5. Highlight WOW or insight in doing this project. 
+          - 
 ## Individual Work Week of 3/26-26
 
 ### Ava: 

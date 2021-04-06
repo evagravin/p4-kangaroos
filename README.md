@@ -75,11 +75,11 @@ Download our project via Intellij to view our blueprint layout and run our websi
      2. Enhance or Define a Class to manage a complex data set
           - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L1)
      3. Create an Object from a Class in Python. 
-          - OBject "Sum" [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L24) and [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L5) that performs the calculation.
+          - Object "Sum" [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L24) and [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L5) that performs the calculation.
      4. Display data or enhanced data from this Python Object on a Web Page using "getters".
           - Used Getters [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L8-L19) and displayed the data using jinja variables. 
      5. Highlight WOW or insight in doing this project. 
-          - For my 
+          - For my class, "Sum" defines the object. For the blueprint, I have a term that is added up by 2 numbers and so a template will be rendered. The method has to work only if I put the GET and POST. 
 
 ## Individual Work Week of 3/26-26
 

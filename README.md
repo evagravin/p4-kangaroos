@@ -70,7 +70,12 @@ Download our project via Intellij to view our blueprint layout and run our websi
 - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57952599)
 - Project concept: the user will be able to calculate the sum of two numbers. 
 - Binary Grading: 
-
+      1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
+           - Blueprint route [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/app.py#L51)
+      2. Enhance or Define a Class to manage a complex data set
+          - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L1)
+      3. Create an Object from a Class in Python. 
+          - Object "Foil" [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/linda_minilab.py#L24)
 ## Individual Work Week of 3/26-26
 
 ### Ava: 

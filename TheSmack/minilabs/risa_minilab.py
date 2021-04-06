@@ -2,7 +2,7 @@ class Calc1:
 
     def __init__(self, temp1):
         self._temp1 = temp1
-        self._answer1 = (self.temp1 - 32) * 5/9
+        self._answer1 = round((self.temp1 - 32) * 5/9,2)
 
     @property
     def temp1(self):
@@ -27,7 +27,8 @@ class Calc2:
 class Calc3:
     def __init__(self, distance3):
         self._distance3 = distance3
-        self._answer3 = (self.distance3 / 1.094)
+        self._answer3 = round((self.distance3 / 1.094),2)
+
     @property
     def distance3(self):
         return self._distance3

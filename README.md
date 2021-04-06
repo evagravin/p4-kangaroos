@@ -21,7 +21,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
 ## Individual Mini-Labs
-### Ava: 
+### Ava: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57952437)
  - Project concept: Display mean, median, mode of any data set that a user enters
  - Binary Grading:
@@ -36,7 +36,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
      5. Highlight WOW or insight in doing this project. 
           - For my class, I created multiple objects [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/ava_minilab.py#L7-L31) that each do different tasks. There is a function to calcualte the mean, median, and mode, as well as getting the string that the user inputted and sorting it from least to greatest to be displayed on the front end. For the front end, I created an interactive table that allows users to hover over the value and have it pop out a bit more. 
 
-### Risa:
+### Risa: 5/5
  - Project Concept: The user will be able to compute American measurements to International measurements. 
  - Binary Grading: 
       1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
@@ -44,14 +44,14 @@ Download our project via Intellij to view our blueprint layout and run our websi
       2. Enhance or Define a Class to manage a complex data set
            - Class is defined [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L1)
       3. Create an Object from a Class in Python. 
-           - Object "Foil" [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L30) that is the instance of the class and [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L3-L5) that performs the calculations.
+           - Object "calc1" [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L30) that is the instance of the class and [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L3-L5) that performs the calculations.
       4. Display data or enhanced data from this Python Object on a Web Page using "getters".
            - Used Getters [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/risa_minilab.py#L7-L13) and displayed the data with Jinja variables.
       5. Highlight WOW or insight in doing this project. 
-           -   I created multiple classes (Calc1, Calc2, etc.) and defines the objects. There are different 
+           -   I created multiple classes (Calc1, Calc2, etc.) and defines the objects. The getters are used to get the information from the user to input it into our calculations. For each page, a new render template is used and in order to correct input and output, calc1.temp1 or calc2.weight2 is used.  
       6. Full route in app.py file [here](https://github.com/evagravin/p4-kangaroos/blob/93a1a7dcca8eeedaf4e2f3e8cce92a57d4e7280c/TheSmack/minilabs/app.py#L34-L44), backend py file [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/risa_minilab.py), html file [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/risa-minilab.html)
 
-### Eva:
+### Eva: 5/5
  - Project concept: The user will enter 4 numbers that will be "foiled" as terms in a binomial multiplication expression.
  - Binary Grading:
      1. Use an individual section (blueprint) in your Scrum Team project for Mini Lab definition and execution.
@@ -66,10 +66,10 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - The class Foil defines the object, or is like a layout for it. It has parameters of the nums, and the numbers that the user enters get passed into it. The terms are made up of those numbers (the certain ones being multiplied to complete the foil process), which are calculated. Then many getters are used to get the data that has already been calculated and the numbers. POST is used to get 4 numbers from the users and renders the template when done. It turns the strings into integers and there is a seperate render template for the page. To display the data, the Jinja variables are used with foil. like foil.num1 and foil.term1 to apply the object foil to them and get the correct output. Also, in the html page, Javascript is used with the "onclick" event, to highlight the displayed equation when clicked. Another button reverts it because it calls the second function which turns the highlight back to transparent. 
       6. full route in app.py file [here](https://github.com/evagravin/p4-kangaroos/blob/22250c4ff8af6b27939b92073b81753d1e0e1408/TheSmack/minilabs/app.py#L39-L49), backend py file [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/minilabs/eva_minilab.py), html file [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/eva-minilab.html)
 
-### Linda:
+### Linda: 5/5
 ## Individual Work Week of 3/26-26
 
-### Ava:
+### Ava: 
 - In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57225859)
 - Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57744261)
 - [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/425ea494f7832df62c3e75edd081d86ab8582ab2) Towards In Progress Story/Ticket

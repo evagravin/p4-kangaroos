@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
-from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp
+from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp, success_bp
 from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp
 from TheSmack.minilabs.app import minilab_bp
 
@@ -27,6 +27,7 @@ app.register_blueprint(searchresults_bp, url_prefix='/searchresults')
 app.register_blueprint(minilab_bp, url_prefix='/minilab')
 app.register_blueprint(aboutus_bp, url_prefix='/aboutus')
 app.register_blueprint(smackmenu_bp, url_prefix='/smackmenu')
+app.register_blueprint(success_bp, url_prefix='/success')
 
 #home page route
 
@@ -36,4 +37,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port='3000', host='127.0.0.1')
+    app.run(port='3000', host='127.0.0.1')

@@ -16,6 +16,7 @@
         </header>
     </div>
     <form method="POST" ID="myForm" action=/minilab/risa class="form1">
+
         <p>
             <label for="temp1" class="pt-5 text-white">Temperature:</label>
             <input id="temp1" name="temp1" placeholder="Enter Temperature" type="text" required="required">
@@ -23,10 +24,9 @@
         </p>
 
 
+        <h1 class="display"> {{calc1.temp1}} <p style="color:#F92006;"> Degrees Fahrenheit </p>  = {{calc1.answer1}} <p style="color:#F98706;">Degrees Celcius</p>  </h1>
 
-        <h1 class="display"> ( {{calc1.temp1}} Degrees Fahrenheit = {{calc1.answer1}} Degrees Celcius ) </h1>
-
-
+        <hr>
 
         <p>
             <label for="weight2" class="pt-5 text-white">Weight:</label>
@@ -35,7 +35,10 @@
         </p>
 
 
-        <h1 class="display">( {{calc2.weight2}} Pounds  =  {{calc2.answer2}} Grams)</h1>
+
+        <h1 class="display">{{calc2.weight2}} <p style="color:#F9DC06;"> Pounds (lbs) </p>  =  {{calc2.answer2}} <p style="color: #41F906;"> Grams </p> </h1>
+
+        <hr>
 
         <p>
             <label for="distance3" class="pt-5 text-white">Distance:</label>
@@ -44,12 +47,12 @@
         </p>
 
 
-        <h1 class="display">( {{calc3.distance3}} Yards  =  {{calc3.answer3}} Meters )</h1>
+        <h1 class="display">{{calc3.distance3}} <p style="color:#0687F9;"> Yards (yds) </p>  =  {{calc3.answer3}} <p style="color: #8006F9;"> Meters</p> </h1>
 
+        <hr>
         <p>
             <button class="button"><span>Compute!</span></button>
         </p>
-
 
 
     </form>
@@ -184,5 +187,8 @@ h2 a {
 .container td:nth-child(4),
 .container th:nth-child(4) { display: none; }
 }
+
+
+
 </style>
 {% endblock %}

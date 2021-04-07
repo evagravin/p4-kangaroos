@@ -65,9 +65,10 @@ def eva_minilab():
         num2 = int(request.form['num2'])
         num3 = int(request.form['num3'])
         num4 = int(request.form['num4'])
+        list = [num1, num2, num3, num4]
         foil = Foil(num1, num2, num3, num4)
         print(f"{foil.term1}{foil.term2}{foil.term3}{foil.term4}")
-        return render_template("/minilabs/eva-minilab.html", foil=foil)
+        return render_template("/minilabs/eva-minilab.html", foil=foil, list=list)
     return render_template("/minilabs/eva-minilab.html", foil=Foil(0,0,0,0))
 
 

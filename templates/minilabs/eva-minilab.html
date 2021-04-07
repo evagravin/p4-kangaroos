@@ -38,11 +38,21 @@
     </form>
     <br>
     <br>
-    <h1 class="display-4">Results:</h1>
+    <h1 class="display-4">List of Numbers:</h1>
+    <h1 class="display-4" id="list">{{list}}</h1>
+    <br>
+    <br>
+    <h1 class="display-4">Foiled Results:</h1>
     <h1 class="display-4" id="equation">( {{foil.num1}} x + {{foil.num2}} )( {{foil.num3}} x + {{foil.num4}} )   =   {{foil.term1}}x^2 + {{foil.term2}}x + {{foil.term3}}x + {{foil.term4}}</h1>
     <br>
-    <button type="button" class="btn" onclick="myFunction()" style="float: center; margin: 4px;">Hightlight Equation</button>
-    <button type="button" class="btn" onclick="my2Function()" style="float: center; margin: 4px;">Revert</button>
+    <br>
+    <br>
+    <button type="button" class="btn" onclick="my3Function()" id="highlight_list" style="float: center; margin: 4px; background: yellow;">Highlight List</button>
+    <button type="button" class="btn" onclick="my4Function()" id="revert_list" style="float: center; margin: 4px; display: none; background: yellow;">Un-Highlight List</button>
+    <br>
+    <br>
+    <button type="button" class="btn" onclick="myFunction()" id="highlight_results" style="float: center; margin: 4px; background: yellow">Hightlight Results</button>
+    <button type="button" class="btn" onclick="my2Function()" id="revert_results" style="float: center; margin: 4px; display: none; background: yellow">Un-Highlight Results</button>
 
 </div>
 </body>
@@ -51,10 +61,26 @@
 <script type="text/javascript">
     function myFunction() {
         document.getElementById("equation").style.backgroundColor = "yellow";
+        document.getElementById("highlight_results").style.display = "none";
+        document.getElementById("revert_results").style.display = "block";
     }
 
     function my2Function() {
         document.getElementById("equation").style.backgroundColor = "#ffffff00";
+        document.getElementById("revert_results").style.display = "none";
+        document.getElementById("highlight_results").style.display = "block";
+    }
+
+    function my3Function() {
+        document.getElementById("list").style.backgroundColor = "yellow";
+        document.getElementById("highlight_list").style.display = "none";
+        document.getElementById("revert_list").style.display = "block";
+    }
+
+    function my4Function() {
+        document.getElementById("list").style.backgroundColor = "#ffffff00";
+        document.getElementById("revert_list").style.display = "none";
+        document.getElementById("highlight_list").style.display = "block";
     }
 </script>
 

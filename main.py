@@ -8,11 +8,11 @@ from TheSmack.minilabs.app import minilab_bp
 app = Flask(__name__)
 
 # database setup
-dbURI = 'sqlite:///TheSmack.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
-db = SQLAlchemy(app)
-db.init_app(app)
+#dbURI = 'sqlite:///TheSmack.db'
+#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+#app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
+#db = SQLAlchemy(app)
+#db.init_app(app)
 
 
 

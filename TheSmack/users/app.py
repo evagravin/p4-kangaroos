@@ -1,6 +1,6 @@
 from flask import redirect, url_for, render_template, request, session, Blueprint, Flask
 from sqlalchemy.sql import text
-#from TheSmack.users.user import user_create
+from TheSmack.users.user import user_create
 from TheSmack.users.custom import apology, convert
 from flask_sqlalchemy import SQLAlchemy
 
@@ -60,7 +60,7 @@ def signup():
         password = request.form['password']
         bio = request.form['bio']
         #calls user_create function from user.py
-       # user_create(username, password, bio)
+        user_create(username, password, bio)
 
         return render_template("/users/success.html")
     else:

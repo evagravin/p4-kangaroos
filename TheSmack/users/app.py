@@ -1,8 +1,8 @@
-from flask import redirect, url_for, render_template, request, session, Blueprint, Flask
+from flask import redirect, url_for, render_template, request, session, Blueprint
 from sqlalchemy.sql import text
 from TheSmack.users.user import user_create
 from TheSmack.users.custom import apology, convert
-from flask_sqlalchemy import SQLAlchemy
+
 
 
 usermenu_bp = Blueprint('usermenu', __name__,
@@ -21,14 +21,8 @@ profile_bp = Blueprint('profile', __name__,
 success_bp = Blueprint('success', __name__,
                        template_folder='templates')
 
-app = Flask(__name__)
 
-# database setup
-dbURI = 'sqlite:///TheSmack.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
-db = SQLAlchemy(app)
-db.init_app(app)
+
 
 
 @usermenu_bp.route('/')

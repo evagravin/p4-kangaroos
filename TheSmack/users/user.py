@@ -22,7 +22,7 @@ class User(db.Model):
 
 #function creates user
 def user_create(username, password, bio):
-    print('User name is ' + username + ' password is ' + password + 'bio is' + bio)
+    print('User name is ' + username + ' password is ' + password + ' bio is ' + bio)
 
     new_user = User(username=username, password=password, bio=bio)
     db.session.add(new_user)

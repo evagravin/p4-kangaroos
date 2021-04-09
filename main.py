@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp
 from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp
 from TheSmack.minilabs.app import minilab_bp
+from flask_bootstrap import Bootstrap
+from flask_login import LoginManager
 
 
 app = Flask(__name__)
@@ -13,6 +15,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 db = SQLAlchemy(app)
 db.init_app(app)
+app.config['SECRET_KEY'] = '5678123'
+bootstrap = Bootstrap(app)
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'login'
 
 
 

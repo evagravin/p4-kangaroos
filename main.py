@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp
 from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp
+from TheSmack.users.user import User
 from TheSmack.minilabs.app import minilab_bp
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager

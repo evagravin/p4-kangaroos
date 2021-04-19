@@ -6,10 +6,10 @@ from TheSmack.minilabs.risa_minilab import Calc2
 from TheSmack.minilabs.risa_minilab import Calc3
 from TheSmack.minilabs.linda_minilab import Sum
 
-
 minilab_bp = Blueprint('minilab Menu', __name__,
                            template_folder='templates',
                            static_folder='static')
+
 
 
 @minilab_bp.route('/')

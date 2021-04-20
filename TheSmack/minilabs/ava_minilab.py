@@ -2,19 +2,15 @@ import statistics
 
 class math:
     def __init__(self):
-        self._lst=[]
-
-    def getAverage(self):
-        mean = sum(self._lst) / len(self._lst)
-        return round(mean, 2)
-
-
-    def addValue(self, value):
-        self._lst.append(value)
+        self._lst = []
 
     def addValues(self, values):
         for value in values.split(","):
             self._lst.append(int(value))
+
+    def getAverage(self):
+        mean = sum(self._lst) / len(self._lst)
+        return round(mean, 2)
 
     def getMedian(self):
         self._lst.sort()

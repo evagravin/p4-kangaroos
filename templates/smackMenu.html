@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block pagecontent %}
+{% include 'buttonStyles.html' %}
+
+<html>
+<body>
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">Choose Smack Method</h1>
+        </header>
+        <a href="/smackDM" class="button button-primary1" id="private">Private Smack</a>
+        <a href="/createsmack" class="button button-primary" id="public">Public Smack</a>
+    </div>
+</div>
+</body>
+</html>
+
+<style>
+    .button button-primary {
+float: left;
+width: 50%;
+padding: 5px;
+
+}
+
+.button button-primary::after {
+content: "";
+clear: both;
+display: table;
+}
+
+    .button button-primary {
+float: left;
+width: 50%;
+padding: 5px;
+}
+
+.button button-primary::after {
+content: "";
+clear: both;
+display: table;
+}
+
+</style>
+{% endblock %}

@@ -31,7 +31,7 @@ def aboutus():
 
 @smackmenu_bp.route('/')
 def smackmenu():
-    return "Smack menu"
+    return render_template("smackMenu.html")
 
 
 @trending_bp.route('/')

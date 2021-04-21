@@ -1,15 +1,11 @@
 {% extends 'layout.html' %}
 {% block pagecontent %}
 
-<!--
- using get method so that the students can see the data being submitted by the form when successful.
- using JS to add novalidate into the form attribute so that we can use HTML5 validation as a fallback if someone is not allowing JS on their page.
--->
+
 <div class="container">
 </div>
     <div>
         <header class="py-5 mt-5">
-
 <form method="post" id="sign-up">
     <h1>Sign Up</h1>
     <div style="display:grid; grid-template-columns: 1fr 1fr; grid-column-gap: 50px;">
@@ -36,7 +32,7 @@
         <fieldset>
             <legend><span class="number">2</span> Your profile</legend>
             <label for="bio">Bio:</label>
-            <textarea id="bio" name="bio"></textarea>
+            <textarea id="bio" name="bio" placeholder="Bio"></textarea>
 
             <button type="submit">Sign Up</button>
 
@@ -47,7 +43,7 @@
 </div>
 
 
-</form>
+
 
 <!-- partial:index.partial.html -->
 <div class="wrap">

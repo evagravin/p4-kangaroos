@@ -31,7 +31,7 @@ def aboutus():
 
 @smackmenu_bp.route('/')
 def smackmenu():
-    return "Smack menu"
+    return render_template("smackMenu.html")
 
 
 @trending_bp.route('/')
@@ -45,7 +45,7 @@ def results():
 
 @createSmack_bp.route('/')
 def createSmack():
-    return "Create a Smack page"
+    return render_template("/media/smackPost.html")
 
 @smackDM_bp.route('/')
 def smackDM():

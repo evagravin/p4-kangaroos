@@ -66,9 +66,6 @@ def signup():
     else:
         return render_template("/users/signup.html")
 
-@success_bp.route('/')
-def success():
-    return render_template('/users/success.html')
 
 @login_bp.route('/')
 def login():

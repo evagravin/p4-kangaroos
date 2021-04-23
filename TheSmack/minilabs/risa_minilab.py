@@ -41,7 +41,7 @@ class Calc3:
 
 
 if __name__ == "__main__":
-    calc1 = Calc1
+    calc1 = Calc1#
     print(f"{calc1.answer1}")
     calc2 = Calc2
     print(f"{calc2.answer2}")

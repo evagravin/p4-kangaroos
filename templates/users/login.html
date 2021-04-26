@@ -128,13 +128,6 @@
             }
 
 
-            if(passVal === '' || passVal == null){
-                //nothing was entered into the name field.
-                errors.push('Cannot have blank password ');
-            }else if(passVal.length < 8 || passVal.length > 20){
-                errors.push('password must be between 8 and 20 characters long.')
-            }
-
 
             if(errors.length > 0){
                 //this means we have at least one error message. So we need to prevent the form from submitting.

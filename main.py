@@ -6,10 +6,7 @@ from TheSmack.users.user import User
 from TheSmack.minilabs.app import minilab_bp
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
-
-
 app = Flask(__name__)
-
 # database setup
 dbURI = 'sqlite:///TheSmack.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -21,9 +18,6 @@ bootstrap = Bootstrap(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
-
-
-
 app.register_blueprint(usermenu_bp, url_prefix='/usermenu')
 app.register_blueprint(signup_bp, url_prefix='/signup')
 app.register_blueprint(login_bp, url_prefix='/login')
@@ -38,14 +32,14 @@ app.register_blueprint(smackmenu_bp, url_prefix='/smackmenu')
 
 
 #home page route
-
 @app.route('/')
 def index():
     return render_template("home.html")
 
 @login_manager.user_loader
 def load_user(user_id):
-    return User.get(user_id)
+    return User.query.get(user_id)
+
 
 if __name__ == "__main__":
     app.run(port='3000', host='127.0.0.1')

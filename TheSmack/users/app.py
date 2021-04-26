@@ -1,8 +1,9 @@
-from flask import redirect, url_for, render_template, request, session, Blueprint, Flask
-from sqlalchemy.sql import text
-from TheSmack.users.user import user_create
+from flask import render_template, request, session, Blueprint, Flask
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from TheSmack.users.user import user_create, validate_user
 from TheSmack.users.custom import apology, convert
 from flask_sqlalchemy import SQLAlchemy
+
 
 
 usermenu_bp = Blueprint('usermenu', __name__,
@@ -67,25 +68,25 @@ def signup():
         return render_template("/users/signup.html")
 
 
-@login_bp.route('/')
+@login_bp.route('/', methods=['POST', 'GET'])
 def login():
-    if request.method == "POST":
-        formUser = request.form["username"]  # using name as dictionary key
-        resultproxy = db.engine.execute(
-            text("SELECT * FROM users WHERE username=:username;").execution_options(autocommit=True),
-            username=formUser)
+    if request.method == 'POST':
+        #username and password variables from form
+        username = request.form['username']
+        password = request.form['password']
+        #just to check if username and password was collected
+        print(username +" " + password)
+        #calls validate_user function from user.py
+        user = validate_user(username, password)
 
-        user = convert(resultproxy)
-
-        # troubleshooting
-        if user == False:
-            return render_template("login.html", error=True)
-
-        # set the user id
-        session.clear()
-        session["user_id"] = user["id"]
-
-        # redirects us to the user page
-        return redirect(url_for("user1", usr=user["username"]))
+        if user:
+            #if validate_user = true, log user in and return profile.html template
+            login_user(user)
+            db.session.commit()
+            return render_template("users/profile.html")
     else:
-        return render_template("/users/login.html", error=False)
+        print('Bar')
+        #if validate_user = false, return login page
+    return render_template("/users/login.html")
+
+

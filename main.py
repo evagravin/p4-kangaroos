@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
-from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp
+from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp, logout_bp
 from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp
 from TheSmack.users.user import User
 from TheSmack.minilabs.app import minilab_bp
@@ -29,6 +29,7 @@ app.register_blueprint(searchresults_bp, url_prefix='/searchresults')
 app.register_blueprint(minilab_bp, url_prefix='/minilab')
 app.register_blueprint(aboutus_bp, url_prefix='/aboutus')
 app.register_blueprint(smackmenu_bp, url_prefix='/smackmenu')
+app.register_blueprint(logout_bp, url_prefix='/logout')
 
 
 #home page route

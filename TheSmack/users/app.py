@@ -1,5 +1,5 @@
 from flask import render_template, request, session, Blueprint, Flask
-from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from flask_login import redirect, url_for, login_user, login_required, logout_user, current_user
 from TheSmack.users.user import user_create, validate_user
 from TheSmack.users.custom import apology, convert
 from flask_sqlalchemy import SQLAlchemy
@@ -21,6 +21,8 @@ profile_bp = Blueprint('profile', __name__,
                      template_folder='templates')
 success_bp = Blueprint('success', __name__,
                        template_folder='templates')
+logout_bp = Blueprint('logout', __name__,
+                      template_folder='templates')
 
 app = Flask(__name__)
 
@@ -90,3 +92,8 @@ def login():
     return render_template("/users/login.html")
 
 
+@logout_bp.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('home.html'))

@@ -1,17 +1,11 @@
 
-#class bubble:
- #   def __init__(self):
-  #      self._lst = []
+class bubble:
+    def __init__(self):
+        self._lst = []
 
-# Program to sort alphabetically the words form a string provided by the user
+    def bubble_sort(self):
+        self._lst = [str(i) for i in self._lst]
+        self._lst.sort()
+        self._lst = [int(i) if i.isdigit() else i for i in self._lst]
+        return self._lst
 
-my_str = "Hello this Is an Example With cased letters"
-
-# To take input from the user
-#my_str = input("Enter a string: ")
-
-words = [word.lower() for word in my_str.split()]
-words.sort()
-print("The sorted words are:")
-for word in words:
-    print(word)

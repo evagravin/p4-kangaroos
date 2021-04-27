@@ -4,6 +4,7 @@ from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp, log
 from TheSmack.social_media.app import trending_bp, createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp
 from TheSmack.users.user import User
 from TheSmack.minilabs.app import minilab_bp
+from TheSmack.bubblesort.app import bubblesort_bp
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
 app = Flask(__name__)
@@ -30,6 +31,7 @@ app.register_blueprint(minilab_bp, url_prefix='/minilab')
 app.register_blueprint(aboutus_bp, url_prefix='/aboutus')
 app.register_blueprint(smackmenu_bp, url_prefix='/smackmenu')
 app.register_blueprint(logout_bp, url_prefix='/logout')
+app.register_blueprint(bubblesort_bp, url_prefix='/bubblesort')
 
 
 #home page route

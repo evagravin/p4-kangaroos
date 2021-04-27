@@ -92,7 +92,7 @@ def login():
     return render_template("/users/login.html")
 
 
-@logout_bp.route('/logout')
+@logout_bp.route('/')
 @login_required
 def logout():
     logout_user()

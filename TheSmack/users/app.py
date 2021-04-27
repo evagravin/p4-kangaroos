@@ -1,7 +1,7 @@
-from flask import render_template, request, Blueprint, Flask,redirect, url_for
-from flask_login import login_user, login_required, logout_user, current_user
+from flask import render_template, request, Blueprint, Flask,redirect, url_for, session
+from flask_login import login_user, login_required, logout_user
 from TheSmack.users.user import user_create, validate_user
-from TheSmack.users.custom import apology, convert
+from TheSmack.users.custom import apology
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -84,7 +84,8 @@ def login():
             #if validate_user = true, log user in and return profile.html template
             login_user(user)
             db.session.commit()
-            return render_template("users/profile.html")
+            #session['user_name'] = user.username
+            return render_template("users/profile.html", username=username)
     else:
         print('Bar')
         #if validate_user = false, return login page
@@ -92,7 +93,6 @@ def login():
 
 
 @logout_bp.route('/')
-@login_required
 def logout():
     logout_user()
-    return redirect(url_for('home.html'))
+    return render_template("home.html")

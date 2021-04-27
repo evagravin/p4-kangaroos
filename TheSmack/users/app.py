@@ -1,9 +1,8 @@
-from flask import render_template, request, session, Blueprint, Flask
-from flask_login import redirect, url_for, login_user, login_required, logout_user, current_user
+from flask import render_template, request, Blueprint, Flask,redirect, url_for
+from flask_login import login_user, login_required, logout_user, current_user
 from TheSmack.users.user import user_create, validate_user
 from TheSmack.users.custom import apology, convert
 from flask_sqlalchemy import SQLAlchemy
-
 
 
 usermenu_bp = Blueprint('usermenu', __name__,

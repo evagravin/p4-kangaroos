@@ -1,16 +1,17 @@
 
-class bubble:
-    def __init__(self):
-        self._lst = []
+#class bubble:
+ #   def __init__(self):
+  #      self._lst = []
 
-    def addValues(self, values):
-        for value in values.split(","):
-            self._lst.append(str(value))
+# Program to sort alphabetically the words form a string provided by the user
 
-    def getList(self):
-        s = ','
-        return s.join(str(value) for value in self._lst)
+my_str = "Hello this Is an Example With cased letters"
 
-    def sort(self):
-        sorted(self._lst)
+# To take input from the user
+#my_str = input("Enter a string: ")
 
+words = [word.lower() for word in my_str.split()]
+words.sort()
+print("The sorted words are:")
+for word in words:
+    print(word)

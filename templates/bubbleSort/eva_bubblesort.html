@@ -8,15 +8,42 @@
     <h1 class="title">Bubble Sort</h1>
     <h6 class="sub-title">This algorithm sorts an integer list in order from least to greatest!</h6>
     <br><br><br>
-    <h3 class="text">Unsorted List: <input id="list1" name="list1" placeholder="Enter List of Numbers" type="text" required="required"><br><br><button class="button"><span>Sort</span></button></h3>
+    <h3 class="text">Enter Numbers To Be Sorted:</h3>
+    <form method="POST" ID="sorting_form" action="/bubblesort/eva">
+        <input id="num1" name="num1" class="input" placeholder="Enter 1st #" type="number" required="required">
+        <input id="num2" name="num2" class="input" placeholder="Enter 2nd #" type="number" required="required">
+        <input id="num3" name="num3" class="input" placeholder="Enter 3rd #" type="number" required="required">
+        <input id="num4" name="num4" class="input" placeholder="Enter 4th #" type="number" required="required">
+        <button class="button"><span>Sort</span></button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <h4 class="text">Unsorted List: {{first_list}}</h4>
+    <h4 class="text">Sorted List: {{sorted_list}}</h4>
 
     <br><br><br><br>
     <h1 class="title">Bubble Sort</h1>
     <h6 class="sub-title">This algorithm sorts a list of any special characters, numbers, or strings in order by their least amount of characters to greatest!</h6>
     <br><br><br>
-    <h3 class="text">Unsorted List: <input id="list2" name="list2" placeholder="Enter List of Numbers" type="text" required="required"><br><br><button class="button"><span>Sort</span></button></h3>
+    <h3 class="text">Enter Numbers / Words / Special Characters To Be Sorted:</h3>
+    <form method="POST" ID="sorting_form2" action="/bubblesort/evaform2">
+        <input id="string1" name="string1" class="input" placeholder="Enter 1st string" type="text" required="required">
+        <input id="string2" name="string2" class="input" placeholder="Enter 2nd string" type="text" required="required">
+        <input id="string3" name="string3" class="input" placeholder="Enter 3rd string" type="text" required="required">
+        <input id="string4" name="string4" class="input" placeholder="Enter 4th string" type="text" required="required">
+        <button class="button"><span>Sort</span></button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <h4 class="text">Unsorted List: {{list2}}</h4>
+    <h4 class="text">Sorted List: {{sorted_list2}}</h4>
     </body>
 </html>
+
 <style>
     .title {
         color: white;
@@ -25,12 +52,17 @@
 
     .text {
         color: white;
-        margin-left: 200px;
+        text-align: center;
     }
 
     .sub-title {
         color: white;
         text-align: center;
+    }
+
+    .input {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
 </style>

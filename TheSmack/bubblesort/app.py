@@ -12,3 +12,7 @@ def ava_bubblesort():
         b = bubble()
         sort = b.bubble_sort()
     return render_template("/bubbleSort/ava_bubblesort.html", sort=sort)
+
+@bubblesort_bp.route('/eva', methods=['GET', 'POST'])
+def eva_bubblesort():
+    return render_template("/bubbleSort/eva_bubblesort.html")

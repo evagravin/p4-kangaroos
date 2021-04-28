@@ -10,4 +10,10 @@ def bubblesort(mynumlist):
                 mynumlist[a], mynumlist[a+1] = mynumlist[a+1], mynumlist[a]
     return mynumlist
 
-    print(bubblesort([2,4,6,5,3,2,7,6,9,22,6]))
+    list_sorted = bubblesort([2, 4, 6, 5, 3, 2, 7, 6, 9, 22, 6])
+
+    print(list_sorted)
+
+
+
+

@@ -8,6 +8,7 @@ def bubble_sort(unsorted_list):  # defines the function and passes in the parame
                 unsorted_list[f + 1] = right  # it now assigns the number on the right to be the "right" variable
     return unsorted_list  # once the steps are completed for the whole list, it returns the new list which is in order
 
-sorted_list = bubble_sort([1,4,87,54,0,98])
+
+sorted_list = bubble_sort([1, 4, 87, 54, 0, 98])
 
 print(sorted_list)

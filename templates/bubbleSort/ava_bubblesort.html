@@ -9,10 +9,9 @@
     <div class="pt-5 text-white">
         <header class="py-5 mt-5">
             <h1 class="display-4">Ava's Bubble Sort</h1>
-            <p style="font-size:20px" >Insert any combination of letters or numbers to have them be sorted</p>
+            <p style="font-size:20px" >Insert any combination of letters or numbers separated by a comma to have them be sorted!</p>
         </header>
     </div>
-</div>
 <form method="POST" ID="myForm" action=# class="form1">
     <p>
         <label for="list" class="pt-5 text-white">List:</label>
@@ -22,10 +21,20 @@
         <button class="button"><span>Sort!</span></button>
     </p>
 </form>
-<br>
-<h1>{{sort}}</h1>
+    <br>
+    <table style="width:100%">
+        <tr>
+            <th>Inputted List</th>
+            <th>Sorted List</th>
+        </tr>
+        <tr>
+            <td>{{list}}</td>
+            <td>{{sort}}</td>
+        </tr>
+    </table>
+</div>
+
 
 </body>
 </html>
-
 {% endblock %}

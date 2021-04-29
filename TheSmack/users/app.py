@@ -1,7 +1,7 @@
-from flask import redirect, url_for, render_template, request, session, Blueprint, Flask
-from sqlalchemy.sql import text
-from TheSmack.users.user import user_create
-from TheSmack.users.custom import apology, convert
+from flask import render_template, request, Blueprint, Flask,redirect, url_for, session
+from flask_login import login_user, login_required, logout_user
+from TheSmack.users.user import user_create, validate_user
+from TheSmack.users.custom import apology
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -20,6 +20,8 @@ profile_bp = Blueprint('profile', __name__,
                      template_folder='templates')
 success_bp = Blueprint('success', __name__,
                        template_folder='templates')
+logout_bp = Blueprint('logout', __name__,
+                      template_folder='templates')
 
 app = Flask(__name__)
 
@@ -67,25 +69,30 @@ def signup():
         return render_template("/users/signup.html")
 
 
-@login_bp.route('/')
+@login_bp.route('/', methods=['POST', 'GET'])
 def login():
-    if request.method == "POST":
-        formUser = request.form["username"]  # using name as dictionary key
-        resultproxy = db.engine.execute(
-            text("SELECT * FROM users WHERE username=:username;").execution_options(autocommit=True),
-            username=formUser)
+    if request.method == 'POST':
+        #username and password variables from form
+        username = request.form['username']
+        password = request.form['password']
+        #just to check if username and password was collected
+        print(username +" " + password)
+        #calls validate_user function from user.py
+        user = validate_user(username, password)
 
-        user = convert(resultproxy)
-
-        # troubleshooting
-        if user == False:
-            return render_template("login.html", error=True)
-
-        # set the user id
-        session.clear()
-        session["user_id"] = user["id"]
-
-        # redirects us to the user page
-        return redirect(url_for("user1", usr=user["username"]))
+        if user:
+            #if validate_user = true, log user in and return profile.html template
+            login_user(user)
+            db.session.commit()
+            #session['user_name'] = user.username
+            return render_template("users/profile.html", username=username)
     else:
-        return render_template("/users/login.html", error=False)
+        print('Bar')
+        #if validate_user = false, return login page
+    return render_template("/users/login.html")
+
+
+@logout_bp.route('/')
+def logout():
+    logout_user()
+    return render_template("home.html")

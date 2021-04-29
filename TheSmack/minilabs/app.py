@@ -11,12 +11,7 @@ minilab_bp = Blueprint('minilab Menu', __name__,
                            static_folder='static')
 
 
-
-@minilab_bp.route('/')
-def minilabMenu():
-    return "Menu for all of the group's individual mini labs"
-
-@minilab_bp.route('/ava' , methods=['GET', 'POST'])
+@minilab_bp.route('/ava', methods=['GET', 'POST'])
 def ava_minilab():
     mean = 0
     median = 0

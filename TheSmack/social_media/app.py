@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-
+from flask_login import login_required
 
 
 trending_bp = Blueprint('trending', __name__,
@@ -44,6 +44,7 @@ def results():
 
 
 @createSmack_bp.route('/')
+@login_required
 def createSmack():
     return render_template("/media/smackPost.html")
 

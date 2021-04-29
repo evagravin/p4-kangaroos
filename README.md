@@ -20,6 +20,26 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Risa Iwazaki | [Github](https://github.com/risaiwazaki) |
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
+## Bubble Sort
+### Ava: 4/30
+ - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59878544)
+ - Mini lab concept: sort list that user inputs(allows integers and strings)
+ - Binary Grading:
+     - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/ava_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/ava_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/app.py#L9-L19)
+     - Build sort using different data types: Creates numlst [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/ava_bubblesort.py#L9-L11) and creates strlst [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/ava_bubblesort.py#L12-L14) (has a list for integers and a list for strings)
+     - Build input screen for different types of data: input form [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/ava_bubblesort.html#L17-L25) and button [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/ava_bubblesort.html#L23) that connects to backend code [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/app.py#L9-L19)
+     - Display sorted results on screen: displayed on table [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/ava_bubblesort.html#L27-L40)
+     - What I learned in this project:
+          - How to sort different data types that were inputted as the same list 
+          - How to sort using classes
+          - Passing variables to front end and POST work using classes
+### Eva:
+
+### Risa:
+
+### Linda:
+
+
 ## Individual Mini-Lab Grading
 ### Ava: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57952437)

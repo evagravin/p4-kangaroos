@@ -5,8 +5,6 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
-login_manager = LoginManager()
-login_manager.init_app(app)
 
 #database set up
 class User(db.Model):

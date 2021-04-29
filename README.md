@@ -33,10 +33,12 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - How to sort different data types that were inputted as the same list 
           - How to sort using classes
           - Passing variables to front end and POST work using classes
+### Eva:
 
-3. Build input screen for different types of data and have action button to sort each type.
-4. Display sorted results on screen
-5. Think about using what you learned in your project (evaluate efficiency).  Look up Insertion and Selection Sort.
+### Risa:
+
+### Linda:
+
 
 ## Individual Mini-Lab Grading
 ### Ava: 5/5

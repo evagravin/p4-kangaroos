@@ -43,7 +43,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
      - Build input screen for different types of data: string input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L12-L18) and integer input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L33-L39)
      - Display sorted results on screen: displayed on hmtl page when "sort" is clicked, [runtime here](http://thesmack.cf/bubblesort/evaform2)
      - What I learned in this project:
-          - sorting using an insertion sort
+          - sorting using an insertion sort - this would iterate through the entire list and compare two elements at a time as it went, to see which would take the "right" place
           - how to switch the places of elements in a list through indexing
           - using "len" to get the length of each element if it is a number/letters/special characters because it takes it in as a string
           - practcing iteration (with for loops)

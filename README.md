@@ -38,8 +38,8 @@ Download our project via Intellij to view our blueprint layout and run our websi
  - Mini lab concept: sort list that user inputs (first sort uses strings and second sort does it with integers)
  - Binary Grading:
      - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/eva_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/eva_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/2a444844b7a1b2a72e669ca9b1c5bca1614291dd/TheSmack/bubblesort/app.py#L21-L45)
-     - Build sort using different data types: Creates numlst [here]() and creates strlst [here]() (has a list for integers and a list for strings)
-     - Build input screen for different types of data: string input form [here]() and integer input form [here]()
+     - Build sort using different data types: Creates string list [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/TheSmack/bubblesort/app.py#L42) and creates integer list [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/TheSmack/bubblesort/app.py#L29)
+     - Build input screen for different types of data: string input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L12-L18) and integer input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L33-L39)
      - Display sorted results on screen: displayed on hmtl page when "sort" is clicked
      - What I learned in this project:
           - sorting using an insertion sort

@@ -33,7 +33,20 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - How to sort different data types that were inputted as the same list 
           - How to sort using classes
           - Passing variables to front end and POST work using classes
-### Eva:
+### Eva: 5/5
+ - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59588720)
+ - Mini lab concept: sort list that user inputs (first sort uses strings and second sort does it with integers)
+ - Binary Grading:
+     - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/eva_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/eva_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/app.py#L9-L19)
+     - Build sort using different data types: Creates numlst [here]() and creates strlst [here]() (has a list for integers and a list for strings)
+     - Build input screen for different types of data: string input form [here]() and integer input form [here]()
+     - Display sorted results on screen: displayed on hmtl page when "sort" is clicked
+     - What I learned in this project:
+          - sorting using an insertion sort
+          - how to switch the places of elements in a list through indexing
+          - using "len" to get the length of each element if it is a number/letters/special characters because it takes it in as a string
+          - practcing iteration (with for loops)
+          - using functions from another .py file in our bubblesort\app.py file (I used my bubble_sort2() function to sort the list that was created from the user's input)
 
 ### Risa:
 

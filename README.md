@@ -21,7 +21,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
 ## Bubble Sort
-### Ava: 4/30
+### Ava: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59878544)
  - Mini lab concept: sort list that user inputs(allows integers and strings)
  - Binary Grading:

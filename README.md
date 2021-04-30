@@ -47,7 +47,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - how to switch the places of elements in a list through indexing
           - using "len" to get the length of each element if it is a number/letters/special characters because it takes it in as a string
           - practcing iteration (with for loops)
-          - using functions from another .py file in our bubblesort\app.py file (I used my bubble_sort2() function to sort the list that was created from the user's input)
+          - using functions from another .py file in our bubblesort\app.py file (I used my bubble_sort2() function to sort the list that was created from the user's input in bubblesort\app.py)
 
 ### Risa:
 

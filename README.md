@@ -37,7 +37,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59588720)
  - Mini lab concept: sort list that user inputs (first sort uses strings and second sort does it with integers)
  - Binary Grading:
-     - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/eva_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/eva_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/app.py#L9-L19)
+     - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/eva_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/eva_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/2a444844b7a1b2a72e669ca9b1c5bca1614291dd/TheSmack/bubblesort/app.py#L21-L45)
      - Build sort using different data types: Creates numlst [here]() and creates strlst [here]() (has a list for integers and a list for strings)
      - Build input screen for different types of data: string input form [here]() and integer input form [here]()
      - Display sorted results on screen: displayed on hmtl page when "sort" is clicked

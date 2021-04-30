@@ -33,6 +33,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - How to sort different data types that were inputted as the same list 
           - How to sort using classes
           - Passing variables to front end and POST work using classes
+          - Using selection and iteration to sort a list
 ### Eva: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59588720)
  - Mini lab concept: sort list that user inputs (first sort uses strings and second sort does it with integers)

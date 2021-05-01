@@ -4,21 +4,39 @@
 {% block pagecontent %}
 <html>
 <body>
-<br><br><br><br><br>
-<h1 class="title">Bubble Sort</h1>
-<h6 class="sub-title">Insert a list of integers to be sorted from least to greatest!</h6>
+<br>
+<br>
+<br>
+<h1 class="title"><i>Risa's Bubble Sort</i></h1>
+<h2 class="sub-title">Input numbers:</h2>
 <br><br><br>
-<h3 class="text">List of Numbers: <input id="list1" name="list1" placeholder="Enter List of Numbers" type="text" required="required"><br>
+<h3 class="text">Input Any Number in Each Box!</h3>
+<form method="POST" ID="sort" action="/bubblesort/risa">
+    <input id="calc1" name="calc1" class="input" placeholder="first number" type="number" required="required"><br><br>
+    <input id="calc2" name="calc2" class="input" placeholder="second number" type="number" required="required"><br><br>
+    <input id="calc3" name="calc3" class="input" placeholder="third number" type="number" required="required"><br><br>
+    <input id="calc4" name="calc4" class="input" placeholder="fourth number" type="number" required="required"><br><br>
+    <input id="calc5" name="calc5" class="input" placeholder="fifth number" type="number" required="required"><br><br>
+    <input id="calc6" name="calc6" class="input" placeholder="sixth number" type="number" required="required"><br><br>
+    <input id="calc7" name="calc7" class="input" placeholder="seventh number" type="number" required="required"><br><br>
+    <input id="calc8" name="calc8" class="input" placeholder="eighth number" type="number" required="required"><br><br>
+    <input id="calc9" name="calc9" class="input" placeholder="ninth number" type="number" required="required"><br><br>
+    <input id="calc10" name="calc10" class="input" placeholder="tenth number" type="number" required="required"><br><br>
+    <button class="button"><span>Sort</span></button>
+</form>
 
-    <p>
-        <button class="button"><span>Sort!</span></button>
-    </p>
-    <h1 class="display">{{mynumlist}} <p style="color:#0687F9;"> </p>  {{list_sorted}} <p style="color: #8006F9;"></p> </h1>
 
-
+<br>
+<br>
+<br>
+<h4 class="display">Unsorted:: {{mycalclist}}</h4>
+<h4 class="display">Sorted: {{list_sorted}}</h4>
+<br><br><br><br>
 </body>
-
 </html>
+
+
+
 <style>
 .button {
   border-radius: 4px;
@@ -58,9 +76,6 @@
   right: 0;
 }
 
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
     .title {
         color: white;
         text-align: center;
@@ -68,7 +83,7 @@
 
     .text {
         color: white;
-        text-align: center;
+        text-align: left;
     }
 
     .sub-title {
@@ -76,7 +91,11 @@
         text-align: center;
     }
 
+    .input {
+        margin-left: 50px;
+        margin-right: 50px;
 
+    }
 
 </style>
 

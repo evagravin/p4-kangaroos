@@ -51,7 +51,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 
           
 
-### Risa: 5/5
+### Risa: 4/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-60216983)
  - Mini lab concept: sort a list of integers that the user inputs
  - Binary Grading:
@@ -65,7 +65,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
           -  Using a while loop and for loop to compare the user inputs of integers 
           -  Know what to do when an integer on the left is greater than an integer on the right, a false statement is used and then flipped to make it true
           - Using loops to practice how to do iterations 
-          - Overall learning how to sort integers through code!
+          - Overall learning how to sort integers through code! 
 
      
 ### Linda:

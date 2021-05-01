@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, request
 from TheSmack.bubblesort.ava_bubblesort import bubble
 from TheSmack.bubblesort.eva_bubblesort import bubble_sort, bubble_sort2
+from TheSmack.bubblesort.risa_bubblesort import bubblesort
+
 
 bubblesort_bp = Blueprint('bubblesort', __name__,
                        template_folder='templates',
@@ -46,4 +48,13 @@ def eva_bubblesort2():
 
 @bubblesort_bp.route('/risa', methods=['GET', 'POST'])
 def risa_bubblesort():
+    if request.method == 'POST':
+        calc1 = int(request.form['calc1'])
+        calc2 = int(request.form['calc2'])
+        calc3 = int(request.form['calc3'])
+        calc4 = int(request.form['calc4'])
+        mycalclist = [calc1, calc2, calc3, calc4]
+        mynumlist = [calc1, calc2, calc3, calc4]
+        list_sorted = bubblesort(mycalclist)
+        return render_template("/bubbleSort/risa_bubblesort.html", calc1=calc1, calc2=calc2, calc3=calc3, calc4=calc4, mynumlist=mynumlist, list_sorted=list_sorted, mycalclist=mycalclist)
     return render_template("/bubbleSort/risa_bubblesort.html")

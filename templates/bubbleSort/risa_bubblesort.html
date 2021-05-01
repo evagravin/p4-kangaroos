@@ -4,21 +4,30 @@
 {% block pagecontent %}
 <html>
 <body>
-<br><br><br><br><br>
-<h1 class="title">Bubble Sort</h1>
-<h6 class="sub-title">Insert a list of integers to be sorted from least to greatest!</h6>
+<br>
+<br>
+<br>
+<h1 class="title"><i>Risa's Bubble Sort</i></h1>
+<h2 class="sub-title">Input numbers to be sorted from least to greatest!</h2>
 <br><br><br>
-<h3 class="text">List of Numbers: <input id="list1" name="list1" placeholder="Enter List of Numbers" type="text" required="required"><br>
+<h3 class="text">Enter Numbers To Be Sorted:</h3>
+<form method="POST" ID="sort" action="/bubblesort/risa">
+    <input id="calc1" name="calc1" class="input" placeholder="Enter 1st #" type="number" required="required">
+    <input id="calc2" name="calc2" class="input" placeholder="Enter 2nd #" type="number" required="required">
+    <input id="calc3" name="calc3" class="input" placeholder="Enter 3rd #" type="number" required="required">
+    <input id="calc4" name="calc4" class="input" placeholder="Enter 4th #" type="number" required="required">
+    <button class="button"><span>Sort</span></button>
+</form>
 
-    <p>
-        <button class="button"><span>Sort!</span></button>
-    </p>
-    <h1 class="display">{{mynumlist}} <p style="color:#0687F9;"> </p>  {{list_sorted}} <p style="color: #8006F9;"></p> </h1>
-
-
+<br>
+<br>
+<br>
+<h4 class="text">Unsorted List: {{mycalclist}}</h4>
+<h4 class="text">Sorted List: {{list_sorted}}</h4>
+<br><br><br><br>
 </body>
-
 </html>
+
 <style>
 .button {
   border-radius: 4px;
@@ -58,9 +67,6 @@
   right: 0;
 }
 
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
     .title {
         color: white;
         text-align: center;
@@ -76,7 +82,10 @@
         text-align: center;
     }
 
-
+    .input {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 
 </style>
 

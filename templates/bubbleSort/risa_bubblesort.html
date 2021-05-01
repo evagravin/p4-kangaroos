@@ -10,23 +10,32 @@
 <h1 class="title"><i>Risa's Bubble Sort</i></h1>
 <h2 class="sub-title">Input numbers to be sorted from least to greatest!</h2>
 <br><br><br>
-<h3 class="text">Enter Numbers To Be Sorted:</h3>
+<h3 class="text">Input Any Number in Each Box!</h3>
 <form method="POST" ID="sort" action="/bubblesort/risa">
-    <input id="calc1" name="calc1" class="input" placeholder="Enter 1st #" type="number" required="required">
-    <input id="calc2" name="calc2" class="input" placeholder="Enter 2nd #" type="number" required="required">
-    <input id="calc3" name="calc3" class="input" placeholder="Enter 3rd #" type="number" required="required">
-    <input id="calc4" name="calc4" class="input" placeholder="Enter 4th #" type="number" required="required">
+    <input id="calc1" name="calc1" class="input" placeholder="first number" type="number" required="required"><br><br>
+    <input id="calc2" name="calc2" class="input" placeholder="second number" type="number" required="required"><br><br>
+    <input id="calc3" name="calc3" class="input" placeholder="third number" type="number" required="required"><br><br>
+    <input id="calc4" name="calc4" class="input" placeholder="fourth number" type="number" required="required"><br><br>
+    <input id="calc5" name="calc5" class="input" placeholder="fifth number" type="number" required="required"><br><br>
+    <input id="calc6" name="calc6" class="input" placeholder="sixth number" type="number" required="required"><br><br>
+    <input id="calc7" name="calc7" class="input" placeholder="seventh number" type="number" required="required"><br><br>
+    <input id="calc8" name="calc8" class="input" placeholder="eighth number" type="number" required="required"><br><br>
+    <input id="calc9" name="calc9" class="input" placeholder="ninth number" type="number" required="required"><br><br>
+    <input id="calc10" name="calc10" class="input" placeholder="tenth number" type="number" required="required"><br><br>
     <button class="button"><span>Sort</span></button>
 </form>
+
 
 <br>
 <br>
 <br>
-<h4 class="text">Unsorted List: {{mycalclist}}</h4>
-<h4 class="text">Sorted List: {{list_sorted}}</h4>
+<h4 class="display">Unsorted List: {{mycalclist}}< </h4>
+<h4 class="display">Sorted List: {{list_sorted}}</h4>
 <br><br><br><br>
 </body>
 </html>
+
+
 
 <style>
 .button {
@@ -74,7 +83,7 @@
 
     .text {
         color: white;
-        text-align: center;
+        text-align: left;
     }
 
     .sub-title {
@@ -85,6 +94,7 @@
     .input {
         margin-left: 50px;
         margin-right: 50px;
+
     }
 
 </style>

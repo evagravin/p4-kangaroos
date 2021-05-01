@@ -53,8 +53,14 @@ def risa_bubblesort():
         calc2 = int(request.form['calc2'])
         calc3 = int(request.form['calc3'])
         calc4 = int(request.form['calc4'])
-        mycalclist = [calc1, calc2, calc3, calc4]
-        mynumlist = [calc1, calc2, calc3, calc4]
+        calc5 = int(request.form['calc5'])
+        calc6 = int(request.form['calc6'])
+        calc7 = int(request.form['calc7'])
+        calc8 = int(request.form['calc8'])
+        calc9 = int(request.form['calc9'])
+        calc10 = int(request.form['calc10'])
+        mycalclist = [calc1, calc2, calc3, calc4, calc5, calc6, calc7, calc8, calc9, calc10]
+        mynumlist = [calc1, calc2, calc3, calc4, calc5, calc6, calc7, calc8, calc9, calc10]
         list_sorted = bubblesort(mycalclist)
-        return render_template("/bubbleSort/risa_bubblesort.html", calc1=calc1, calc2=calc2, calc3=calc3, calc4=calc4, mynumlist=mynumlist, list_sorted=list_sorted, mycalclist=mycalclist)
+        return render_template("/bubbleSort/risa_bubblesort.html", calc1=calc1, calc2=calc2, calc3=calc3, calc4=calc4, calc5=calc5, calc6=calc6, calc7=calc7, calc8=calc8, calc9=calc9, calc10=calc10, mynumlist=mynumlist, list_sorted=list_sorted, mycalclist=mycalclist)
     return render_template("/bubbleSort/risa_bubblesort.html")

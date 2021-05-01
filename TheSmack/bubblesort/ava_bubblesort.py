@@ -1,4 +1,3 @@
-
 class bubble:
     def __init__(self):
         self._lst = []
@@ -13,11 +12,6 @@ class bubble:
                 self._lststr.append(value)
             self._lst.append(str(value))
 
-    def getList(self):
-        s = ', '
-        return s.join(str(value) for value in self._lst)
-
-
     def sort(self):
         bubbleSort(self._lstnum)
         bubbleSort(self._lststr)
@@ -29,9 +23,15 @@ class bubble:
             results.append(s)
         return results
 
+    def getList(self):
+        s = ', '
+        return s.join(str(value) for value in self._lst)
+
+
 def bubbleSort(arr):
-    n = len(arr)
-    for i in range(n):
-        for j in range(0, n-i-1):
+    l = len(arr)
+    for i in range(l):
+        for j in range(0, l-i-1):
             if arr[j] > arr[j+1] :
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+

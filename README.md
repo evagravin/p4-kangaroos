@@ -21,7 +21,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
 ## Bubble Sort
-### Ava: 4/30
+### Ava: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59878544)
  - Mini lab concept: sort list that user inputs(allows integers and strings)
  - Binary Grading:
@@ -33,7 +33,21 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - How to sort different data types that were inputted as the same list 
           - How to sort using classes
           - Passing variables to front end and POST work using classes
-### Eva:
+          - Using selection and iteration to sort a list
+### Eva: 5/5
+ - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59588720)
+ - Mini lab concept: sort list that user inputs (first sort uses strings and second sort does it with integers)
+ - Binary Grading:
+     - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/eva_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/eva_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/2a444844b7a1b2a72e669ca9b1c5bca1614291dd/TheSmack/bubblesort/app.py#L21-L45)
+     - Build sort using different data types: Creates string list [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/TheSmack/bubblesort/app.py#L42) and creates integer list [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/TheSmack/bubblesort/app.py#L29)
+     - Build input screen for different types of data: string input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L12-L18) and integer input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L33-L39)
+     - Display sorted results on screen: displayed on hmtl page when "sort" is clicked, [runtime here](http://thesmack.cf/bubblesort/evaform2)
+     - What I learned in this project:
+          - sorting using an insertion sort - this would iterate through the entire list and compare two elements at a time as it went, to see which would take the "right" place
+          - how to switch the places of elements in a list through indexing
+          - using "len" to get the length of each element if it is a number/letters/special characters because it takes it in as a string
+          - practcing iteration (with for loops)
+          - using functions from another .py file in our bubblesort\app.py file (I used my bubble_sort2() function to sort the list that was created from the user's input in bubblesort\app.py)
 
 ### Risa:
 

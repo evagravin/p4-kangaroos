@@ -1,4 +1,4 @@
-def bubblesort(mynumlist):  # defines the function bubblesort and passes the parameter, mynumlist, which is also the list
+def bubblesort(mynumlist):
     num_length = len(mynumlist) - 1
     sorted = False
 

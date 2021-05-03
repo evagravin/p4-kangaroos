@@ -71,7 +71,7 @@ def linda_minilab():
         num1 = int(request.form['num1'])
         num2 = int(request.form['num2'])
         num3 = int(request.form['num3'])
-        list = int(num1, num2)
+        list = int(num1, num2, num3)
         print(f"{sum.term1}")
         return render_template("/bubblesort/linda_bubblesort.html", list=list)
     return render_template("/bubblesort/linda_bubblesort.html")

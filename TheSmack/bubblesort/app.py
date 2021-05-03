@@ -64,3 +64,14 @@ def risa_bubblesort():
         list_sorted = bubblesort(mycalclist)
         return render_template("/bubbleSort/risa_bubblesort.html", calc1=calc1, calc2=calc2, calc3=calc3, calc4=calc4, calc5=calc5, calc6=calc6, calc7=calc7, calc8=calc8, calc9=calc9, calc10=calc10, mynumlist=mynumlist, list_sorted=list_sorted, mycalclist=mycalclist)
     return render_template("/bubbleSort/risa_bubblesort.html")
+
+@bubblesort_bp.route('/linda' , methods=['GET', 'POST'])
+def linda_minilab():
+    if request.method == 'POST':
+        num1 = int(request.form['num1'])
+        num2 = int(request.form['num2'])
+        num3 = int(request.form['num3'])
+        list = int(num1, num2)
+        print(f"{sum.term1}")
+        return render_template("/bubblesort/linda_bubblesort.html", list=list)
+    return render_template("/bubblesort/linda_bubblesort.html")

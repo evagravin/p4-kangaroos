@@ -77,7 +77,10 @@ Download our project via Intellij to view our blueprint layout and run our websi
      - Build input screen for different types of data: integer input form [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/linda_bubblesort.html#L15-L30)
      - Display sorted results on screen: displayed on hmtl page when "sort" is clicked, [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/linda_bubblesort.html#L33-L34)
      - What I learned in this project:
-          - 
+          - using for loops to make iteration
+          - creating an integer list
+          - knowing html 'input' accepts data from user
+          - need to learn about how to sort words
 
 ## Individual Mini-Lab Grading
 ### Ava: 5/5

@@ -13,8 +13,8 @@ class bubble:
             self._lst.append(str(value))
 
     def sort(self):
-        bubbleSort(self._lstnum)
-        bubbleSort(self._lststr)
+        bubble.bubbleSort(self._lstnum)
+        bubble.bubbleSort(self._lststr)
 
         results = []
         for n in self._lstnum:
@@ -28,10 +28,10 @@ class bubble:
         return s.join(str(value) for value in self._lst)
 
 
-def bubbleSort(arr):
-    l = len(arr)
-    for i in range(l):
-        for j in range(0, l-i-1):
-            if arr[j] > arr[j+1] :
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+    def bubbleSort(arr):
+        l = len(arr)
+        for i in range(l):
+            for j in range(0, l-i-1):
+                if arr[j] > arr[j+1] :
+                    arr[j], arr[j+1] = arr[j+1], arr[j]
 

@@ -44,7 +44,7 @@ def results():
 
 
 @createSmack_bp.route('/')
-@login_required
+#@login_required
 def createSmack():
     return render_template("/media/smackPost.html")
 

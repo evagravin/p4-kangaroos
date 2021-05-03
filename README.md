@@ -41,16 +41,33 @@ Download our project via Intellij to view our blueprint layout and run our websi
      - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/eva_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/eva_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/2a444844b7a1b2a72e669ca9b1c5bca1614291dd/TheSmack/bubblesort/app.py#L21-L45)
      - Build sort using different data types: Creates string list [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/TheSmack/bubblesort/app.py#L42) and creates integer list [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/TheSmack/bubblesort/app.py#L29)
      - Build input screen for different types of data: string input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L12-L18) and integer input form [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/templates/bubbleSort/eva_bubblesort.html#L33-L39)
-     - Display sorted results on screen: displayed on hmtl page when "sort" is clicked, [runtime here](http://thesmack.cf/bubblesort/evaform2)
+     - Display sorted results on screen: displayed on hmtl page when "sort" is clicked, [runtime here](http://thesmack.cf/bubblesort/evaform2
      - What I learned in this project:
           - sorting using an insertion sort - this would iterate through the entire list and compare two elements at a time as it went, to see which would take the "right" place
           - how to switch the places of elements in a list through indexing
           - using "len" to get the length of each element if it is a number/letters/special characters because it takes it in as a string
-          - practcing iteration (with for loops)
+          - practicing iteration (with for loops)
           - using functions from another .py file in our bubblesort\app.py file (I used my bubble_sort2() function to sort the list that was created from the user's input in bubblesort\app.py)
 
-### Risa:
+          
 
+### Risa: 4/5
+ - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-60216983)
+ - Mini lab concept: sort a list of integers that the user inputs
+ - Binary Grading:
+     - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/57938869a15e30eb3808031a7b4e8184eb0c6606/TheSmack/bubblesort/risa_bubblesort.py), [here](https://github.com/evagravin/p4-kangaroos/blob/57938869a15e30eb3808031a7b4e8184eb0c6606/templates/bubbleSort/risa_bubblesort.html), and [here](https://github.com/evagravin/p4-kangaroos/blob/57938869a15e30eb3808031a7b4e8184eb0c6606/TheSmack/bubblesort/app.py#L49-L66)
+     - Build sort using different data types: Create Integer List [here](https://github.com/evagravin/p4-kangaroos/blob/57938869a15e30eb3808031a7b4e8184eb0c6606/TheSmack/bubblesort/app.py#L63)
+     - Build input screen for different types of data: Integer input form [here](https://github.com/evagravin/p4-kangaroos/blob/57938869a15e30eb3808031a7b4e8184eb0c6606/templates/bubbleSort/risa_bubblesort.html#L15-L24)
+     - Display sorted results on screen: When the button sort is clicked, the user will see a display of the sorted list of integers they inputted, [runtime here](http://thesmack.cf/bubblesort/risa)
+     - What I learned in this project:
+          - How to perform a comparrison on the last number of a list by using "-1", means doing it up to the -1 element 
+          -  Creating a local variable used throughout the function "numsort": using the sorted variable inside the flow to bring it out whenever the list is successfully sorted
+          -  Using a while loop and for loop to compare the user inputs of integers 
+          -  Know what to do when an integer on the left is greater than an integer on the right, a false statement is used and then flipped to make it true
+          - Using loops to practice how to do iterations 
+          - Overall learning how to sort integers through code! 
+
+     
 ### Linda:
 
 

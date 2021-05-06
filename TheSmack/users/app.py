@@ -64,7 +64,7 @@ def signup():
         #calls user_create function from user.py
         user_create(username, password, bio)
 
-        return render_template("/users/profile.html")
+        return render_template("/users/profile.html", username=username, bio=bio)
     else:
         return render_template("/users/signup.html")
 

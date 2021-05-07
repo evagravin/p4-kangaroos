@@ -1,19 +1,21 @@
+mylist = []
 
-def bubble(list):
-    length = len(list) - 1
+def sortingbubble(unList):
+    length = len(unList) - 1
     unsorted = True
 
     while unsorted:
-        unsorted = False
-        for v in range(0,length):
-            if list[v] > list[v + 1]:
-                hold = list[v + 1]
-                list[v + 1] = list[v]
-                list[v] = hold
+        for element in range(0,length):
+            unsorted = False
+            if unList[element] > unList[element + 1]:
+                hold = unList[element + 1]
+                unList[element + 1] = unList[element]
+                unList[element] = hold
+                print (unList)
+            else:
                 unsorted = True
-            return list
+
+print (sortingbubble(mylist))
 
 
-
-if __name__ == "__main__":
-    print list
+#make 2 varibales in front end in jinja, set default values for the list 

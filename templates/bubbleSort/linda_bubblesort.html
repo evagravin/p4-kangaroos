@@ -9,22 +9,13 @@
         <header class="py-5 mt-5">
             <h1 class="display-4">Linda's Bubblesort</h1>
             <p style="font-size:20px" > This tool can be used for sorting a list of words or numbers. </p>
-            <h1 class="display-4">( _ + _ )</h1>
         </header>
     </div>
-    <form method="POST" ID="sortform" action="/minilab/linda">
+    <form method="POST" ID="sortform" action="/bubblesort/linda">
         <p>
-            <label for="num1" class="pt-5 text-white">1st value:</label>
-            <input id="num1" name="num1" placeholder="Enter" type="number" style="width:50px" required="required">
-        <p>
-            <label for="num2" class="pt-5 text-white">2nd value:</label>
-            <input id="num2" name="num2" placeholder="Enter" type="number" style="width:50px" required="required">
+            <label for="list" class="pt-5 text-white">List</label>
+            <input id="list" name="list" placeholder="Enter" style="width:50px" required="required">
         </p>
-        <p>
-            <label for="num3" class="pt-5 text-white">3rd value:</label>
-            <input id="num3" name="num3" placeholder="Enter" type="number" style="width:50px" required="required">
-        </p>
-        <p>
             <button class="button"><span>Sort!</span></button>
         </p>
     </form>

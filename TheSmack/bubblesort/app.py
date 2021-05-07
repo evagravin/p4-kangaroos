@@ -71,6 +71,7 @@ def linda_minilab():
     sort = 0
     if request.method == 'POST':
         values = request.form['list']
-        linda.addValues(values)
-        sort = linda.sortingbubble()
+        l = linda()
+        l.addValues(values)
+        sort = l.sortingbubble()
     return render_template("/bubblesort/linda_bubblesort.html", sort=sort)

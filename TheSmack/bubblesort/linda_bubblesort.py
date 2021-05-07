@@ -9,20 +9,17 @@ class linda:
 
 
     def sortingbubble(self):
-        length = len(self) - 1
+        length = len(self._lst) - 1
         unsorted = True
     
         while unsorted:
             for element in range(0,length):
                 unsorted = False
-                if self[element] > self[element + 1]:
-                    hold = self[element + 1]
-                    self[element + 1] = self[element]
-                    self[element] = hold
-                    print (self)
+                if self._lst[element] > self._lst[element + 1]:
+                    hold = self._lst[element + 1]
+                    self._lst[element + 1] = self._lst[element]
+                    self._lst[element] = hold
                 else:
                     unsorted = True
 
-    print (sortingbubble(self))
-    
-     
+

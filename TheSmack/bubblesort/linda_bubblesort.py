@@ -1,21 +1,28 @@
-mylist = []
+class linda:
 
-def sortingbubble(unList):
-    length = len(unList) - 1
-    unsorted = True
+    def __init__(self):
+        self._lst = []
 
-    while unsorted:
-        for element in range(0,length):
-            unsorted = False
-            if unList[element] > unList[element + 1]:
-                hold = unList[element + 1]
-                unList[element + 1] = unList[element]
-                unList[element] = hold
-                print (unList)
-            else:
-                unsorted = True
-
-print (sortingbubble(mylist))
+    def addValues(self, values):
+        for value in values.split(","):
+            self._lst.append(int(value))
 
 
-#make 2 varibales in front end in jinja, set default values for the list 
+    def sortingbubble(self):
+        length = len(self) - 1
+        unsorted = True
+    
+        while unsorted:
+            for element in range(0,length):
+                unsorted = False
+                if self[element] > self[element + 1]:
+                    hold = self[element + 1]
+                    self[element + 1] = self[element]
+                    self[element] = hold
+                    print (self)
+                else:
+                    unsorted = True
+
+    print (sortingbubble(self))
+    
+     

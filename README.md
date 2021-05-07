@@ -51,7 +51,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 
           
 
-### Risa: 4/5
+### Risa: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-60216983)
  - Mini lab concept: sort a list of integers that the user inputs
  - Binary Grading:
@@ -68,16 +68,19 @@ Download our project via Intellij to view our blueprint layout and run our websi
           - Overall learning how to sort integers through code! 
 
      
-### Linda: 1.5/5 (will work on improvement task to make up)
+### Linda: 2/5 (will work on improvement task to make up)
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-59965954)
  - Mini lab concept: sort list that user inputs (integers and try to work on strings)
  - Binary Grading:
-     - Build individual section into your Scrum Team project: [here](), [here](), and [here]()
-     - Build sort using different data types: Creates integer list [here]() and creates integer list [here](https://github.com/evagravin/p4-kangaroos/blob/1dcf0d8f2cedd06a3b930656f64ec283f160a1b1/TheSmack/bubblesort/app.py#L29)
-     - Build input screen for different types of data: string input form [here]() and integer input form [here]()
-     - Display sorted results on screen: displayed on hmtl page when "sort" is clicked, [here]()
+     - Build individual section into your Scrum Team project: [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/linda_bubblesort.html), [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/linda_bubblesort.py), and [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/app.py)
+     - Build sort using different data types: Creates integer list [here](https://github.com/evagravin/p4-kangaroos/blob/main/TheSmack/bubblesort/app.py#L74)
+     - Build input screen for different types of data: integer input form [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/linda_bubblesort.html#L15-L30)
+     - Display sorted results on screen: displayed on hmtl page when "sort" is clicked, [here](https://github.com/evagravin/p4-kangaroos/blob/main/templates/bubbleSort/linda_bubblesort.html#L33-L34)
      - What I learned in this project:
-          - 
+          - using for loops to make iteration
+          - creating an integer list
+          - knowing html 'input' accepts data from user
+          - need to learn about how to sort words
 
 ## Individual Mini-Lab Grading
 ### Ava: 5/5

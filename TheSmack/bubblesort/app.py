@@ -66,9 +66,12 @@ def risa_bubblesort():
     return render_template("/bubbleSort/risa_bubblesort.html")
 
 @bubblesort_bp.route('/linda' , methods=['GET', 'POST'])
-def linda_bubblesort():
+def linda_minilab():
     if request.method == 'POST':
-        list = request.form['list']
-        sortingbubble()
+        num1 = int(request.form['num1'])
+        num2 = int(request.form['num2'])
+        num3 = int(request.form['num3'])
+        list = int(num1, num2)
+        print(f"{sum.term1}")
         return render_template("/bubblesort/linda_bubblesort.html", list=list)
     return render_template("/bubblesort/linda_bubblesort.html")

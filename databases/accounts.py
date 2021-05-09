@@ -13,3 +13,7 @@ class User(db.Model):
     #something for idphoto/profile photo
     username = db.Column(db.String(255), primary_key=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
+
+
+
+    

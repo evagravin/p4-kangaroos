@@ -1,12 +1,12 @@
 def bubblesort(mynumlist):
     num_length = len(mynumlist) - 1
-    sorted = False
+    numsort = False
 
-    while not sorted:
-        sorted = True
+    while not numsort:
+        numsort = True
         for a in range(0, num_length):
             if mynumlist[a] > mynumlist[a + 1]:
-                sorted = False
+                numsort = False
                 mynumlist[a], mynumlist[a + 1] = mynumlist[a + 1], mynumlist[a]
     return mynumlist
 

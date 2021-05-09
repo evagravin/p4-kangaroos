@@ -51,7 +51,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 
           
 
-### Risa: 4/5
+### Risa: 5/5
  - [Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-60216983)
  - Mini lab concept: sort a list of integers that the user inputs
  - Binary Grading:

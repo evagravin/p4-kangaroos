@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request
 from TheSmack.bubblesort.ava_bubblesort import bubble
 from TheSmack.bubblesort.eva_bubblesort import bubble_sort, bubble_sort2
 from TheSmack.bubblesort.risa_bubblesort import bubblesort
+from TheSmack.bubblesort.linda_bubblesort import linda
 
 
 bubblesort_bp = Blueprint('bubblesort', __name__,
@@ -67,11 +68,12 @@ def risa_bubblesort():
 
 @bubblesort_bp.route('/linda' , methods=['GET', 'POST'])
 def linda_minilab():
+    unsort = 0
+    sort = 0
     if request.method == 'POST':
-        num1 = int(request.form['num1'])
-        num2 = int(request.form['num2'])
-        num3 = int(request.form['num3'])
-        list = int(num1, num2, num3)
-        print(f"{sum.term1}")
-        return render_template("/bubblesort/linda_bubblesort.html", list=list)
-    return render_template("/bubblesort/linda_bubblesort.html")
+        values = request.form['list']
+        l = linda()
+        l.addValues(values)
+        sort = l.sort()
+        unsort = request.form['list']
+    return render_template("/bubblesort/linda_bubblesort.html", sort=sort, unsort=unsort)

@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 from flask_login import login_required
 
 
@@ -46,7 +46,15 @@ def results():
 @createSmack_bp.route('/')
 #@login_required
 def createSmack():
+    if request.method == 'POST':
+        emotion = request.form['emotion']
+        update = request.form['update']
+        print(emotion + " " + update)
+        return render_template("/users/profile.html")
+    else:
+        print('bar')
     return render_template("/media/smackPost.html")
+
 
 @smackDM_bp.route('/')
 def smackDM():

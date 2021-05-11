@@ -6,13 +6,13 @@
 </div>
 <div>
     <header class="py-5 mt-5">
-        <form method="post" id="post">
+        <form action="/createsmack/" method="POST" id="post">
             <h1>Create a Smack</h1>
             <br>
             <div style="display:grid; grid-template-columns: 1fr 1fr; grid-column-gap: 50px;">
                 <fieldset>
                     <!-- made these fields required -->
-                    <legend><span class="number">1</span>Choose an Emotion:</legend>
+                    <legend><span class="number" >1</span>Choose an Emotion:</legend>
                     <select name="emotion" id="emotion">
                         <option value="happy">Happy</option>
                         <option value="sad">Sad</option>
@@ -22,14 +22,14 @@
                 </fieldset>
                 <fieldset>
                     <legend><span class="number">3</span>Upload a photo:</legend>
-                    <form action="/action_page.php">
-                        <input type="file" id="myFile" name="filename">
+                    <form action="/">
+                        <input type="file" id="photo" name="photo">
                     </form>
                 </fieldset>
 
                 <fieldset>
                     <legend><span class="number">2</span>Your Update:</legend>
-                    <textarea name="post" placeholder="Update"></textarea>
+                    <textarea name="update" placeholder="Update"></textarea>
 
                     <button type="submit">Smack</button>
 

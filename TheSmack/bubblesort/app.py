@@ -11,13 +11,18 @@ bubblesort_bp = Blueprint('bubblesort', __name__,
 
 @bubblesort_bp.route('/ava', methods=['GET', 'POST'])
 def ava_bubblesort():
+    #set default values for variables list and sort
     list = 0
     sort = 0
     if request.method == 'POST':
+        #get values from form
         values = request.form['list']
         b = bubble()
+        #call addValues function from bubblesort.py
         b.addValues(values)
+        #getList
         list = b.getList()
+        #sort the lists
         sort = b.sort()
     return render_template("/bubbleSort/ava_bubblesort.html", list=list, sort=sort)
 

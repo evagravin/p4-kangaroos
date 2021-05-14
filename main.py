@@ -7,6 +7,7 @@ from TheSmack.minilabs.app import minilab_bp
 from TheSmack.bubblesort.app import bubblesort_bp
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
+import requests
 app = Flask(__name__)
 # database setup
 dbURI = 'sqlite:///TheSmack.db'
@@ -35,9 +36,15 @@ app.register_blueprint(bubblesort_bp, url_prefix='/bubblesort')
 
 
 #home page route
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
-    return render_template("home.html")
+    # call to random joke web api
+    url = 'https://api.quotable.io/random'
+    response = requests.get(url)
+    st = response.json()
+    quote = st['content']
+    author = st['author']
+    return render_template("home.html", quote=quote, author=author)
 
 @login_manager.user_loader
 def load_user(user_id):

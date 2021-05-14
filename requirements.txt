@@ -6,3 +6,5 @@ flask_table
 gunicorn
 flask_login
 flask_bootstrap
+
+requests~=2.25.1

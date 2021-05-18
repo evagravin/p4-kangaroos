@@ -39,12 +39,12 @@ app.register_blueprint(bubblesort_bp, url_prefix='/bubblesort')
 @app.route('/', methods=['GET'])
 def index():
     # call to random joke web api
-    url = 'https://api.quotable.io/random'
-    response = requests.get(url)
-    st = response.json()
-    quote = st['content']
-    author = st['author']
-    return render_template("home.html", quote=quote, author=author)
+    #url = 'https://api.quotable.io/random'
+    #response = requests.get(url)
+    #st = response.json()
+    #quote = st['content']
+    #author = st['author']
+    return render_template("home.html") #quote=quote, author=author
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -52,4 +52,4 @@ def load_user(user_id):
 
 
 if __name__ == "__main__":
-    app.run(port='3000', host='127.0.0.1')
+    app.run(port='3000', host='127.0.0.1', debug=True)

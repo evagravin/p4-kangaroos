@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-{% extends "layout.html" %}
+{% extends "layout.html" %} <!-- credit given to Ava Brooks for the layout.html code with more CSS, the navbar, and formatting -->
 
 {% block pagecontent %}
 <html>
     <body>
     <br><br><br><br><br>
     <h1 class="title"><i>Bubble Sort 1</i></h1>
-    <h6 class="sub-title">This algorithm sorts a list of any special characters, numbers, or strings in order by their least amount of characters to greatest!</h6>
+    <h6 class="sub-title">This algorithm sorts a list of any words, numbers, or special characters in order by their least amount of characters to greatest!</h6>
     <br><br><br>
-    <h3 class="text">Enter Numbers / Words / Special Characters To Be Sorted:</h3>
+    <h3 class="text">Enter Words / Numbers / Special Characters To Be Sorted:</h3>
     <form method="POST" ID="sorting_form2" action="/bubblesort/evaform2">
         <input id="string1" name="string1" class="input" placeholder="Enter 1st element" type="text" required="required">
         <input id="string2" name="string2" class="input" placeholder="Enter 2nd element" type="text" required="required">
@@ -23,6 +23,7 @@
     <h4 class="text">Unsorted List: {{list2}}</h4>
     <h4 class="text">Sorted List: {{sorted_list2}}</h4>
 
+    <br>
     <br>
     <br>
     <br>

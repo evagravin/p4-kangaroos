@@ -9,6 +9,8 @@ from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
 import requests
 app = Flask(__name__)
+
+
 # database setup
 dbURI = 'sqlite:///TheSmack.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

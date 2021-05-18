@@ -42,7 +42,6 @@ def trending():
 def results():
     return "Search results page"
 
-
 @createSmack_bp.route('/')
 #@login_required
 def createSmack():

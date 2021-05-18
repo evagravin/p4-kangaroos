@@ -85,7 +85,7 @@ def login():
             #if validate_user = true, log user in and return profile.html template
             login_user(user)
             db.session.commit()
-            return render_template("users/profile.html", username=username, bio=user.bio)
+            return render_template("users/profile.html", username=username, bio=user.bio, school=user.school)
     else:
         print('Bar')
         #if validate_user = false, return login page

@@ -61,8 +61,9 @@ def signup():
         username = request.form['username']
         password = request.form['password']
         bio = request.form['bio']
+        school = request.form['school']
         #calls user_create function from user.py
-        user_create(username, password, bio)
+        user_create(username, password, school, bio)
 
         return render_template("/users/profile.html", username=username, bio=bio)
     else:

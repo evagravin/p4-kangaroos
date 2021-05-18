@@ -31,7 +31,7 @@ app.register_blueprint(smackDM_bp, url_prefix='/smackDM')
 app.register_blueprint(profile_bp, url_prefix='/profile')
 app.register_blueprint(searchresults_bp, url_prefix='/searchresults')
 app.register_blueprint(minilab_bp, url_prefix='/minilab')
-app.register_blueprint(aboutus_bp, url_prefix='/aboutus')
+app.register_blueprint(aboutus_bp, url_prefix='/digitalPortfolios')
 app.register_blueprint(smackmenu_bp, url_prefix='/smackmenu')
 app.register_blueprint(logout_bp, url_prefix='/logout')
 app.register_blueprint(bubblesort_bp, url_prefix='/bubblesort')
@@ -54,4 +54,4 @@ def load_user(user_id):
 
 
 if __name__ == "__main__":
-    app.run(port='3000', host='127.0.0.1', debug=True)
+    app.run(port='3000', host='127.0.0.1')

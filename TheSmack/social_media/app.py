@@ -27,7 +27,7 @@ smackmenu_bp = Blueprint('smackmenu', __name__,
 
 @aboutus_bp.route('/')
 def aboutus():
-    return render_template ("aboutus.html")
+    return render_template ("digitalPortfolios.html")
 
 @smackmenu_bp.route('/')
 def smackmenu():

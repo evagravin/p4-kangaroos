@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request
-from flask_login import login_required
+from TheSmack.social_media.post import post_create
 
 
 trending_bp = Blueprint('trending', __name__,
@@ -42,13 +42,13 @@ def trending():
 def results():
     return "Search results page"
 
-@createSmack_bp.route('/')
+@createSmack_bp.route('/', methods=['POST', 'GET'])
 #@login_required
 def createSmack():
     if request.method == 'POST':
         emotion = request.form['emotion']
         update = request.form['update']
-        print(emotion + " " + update)
+        post_create(username, emotion, update)
         return render_template("/users/profile.html")
     else:
         print('bar')

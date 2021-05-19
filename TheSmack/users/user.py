@@ -27,6 +27,7 @@ def user_create(username, password, school, bio):
     db.session.commit()
 
 
+
 #function for logging in
 def validate_user(username, password):
     testuser=User.query.filter_by(username=username).first()

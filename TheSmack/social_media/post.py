@@ -17,12 +17,14 @@ class Posts(db.Model):
         return self.username
 
 
-#function creates user
+#function creates post
 def post_create(username, emotion, update):
     print('User name is ' + username + ' emotion is ' + emotion + ' update is ' + update)
 
     new_post = Posts(username=username, emotion=emotion, update=update)
     db.session.add(new_post)
     db.session.commit()
+
+
 
 

@@ -92,7 +92,7 @@
 <h1 style="font-family: Palatino; color: white; text-align: center">Meet the Kangaroos</h1>
 <br>
 <br>
-<h2 style="font-family: Palatino; color: white; text-align: center">Get to know the developers and their backgrounds a bit better!</h2>
+<h2 style="font-family: Palatino; color: white; text-align: center">Get to know the developers and view their digital portfolios!</h2>
 <div class="cards_about">
     <div class="card_about">
         <h2 style="font-size: 20pt" class="card-title_about"><i style="margin-right: 0.3em; color: gray" class="fab fa-html5"></i>Eva Gravin</h2>
@@ -122,5 +122,90 @@
 </div>
     </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<h1 style="font-family: Palatino; color: white; text-align: center">How This Website Was Made</h1>
+<br>
+<br>
+<h2 style="font-family: Palatino; color: white; text-align: center">As a team, this website was the final result of collaboration, working through PBL tasks, and scrum board progression.</h2>
+<br>
+<br>
+<h3 style="font-family: Palatino; color: white; text-align: center">Here are artifacts of creating the website - </h3>
+<br>
+<div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+        <button style="background-color: #9000FF; margin: 10px; color: white;" type="button" class="btn" onclick="display_pad_let()" id="display_pl">Padlet</button>
+        <button style="background-color: #9000FF; display:none; margin: 10px; color: white;" type="button" class="btn" onclick="hide_pad_let()" id="hide_pl">Padlet</button>
+        <iframe id="pl" src="https://padlet.com/embed/qh0x41uvx9qaojlb" width="800" height="300" title="Padlet" style="text-align:center; display: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button style="background-color: #9000FF; margin: 10px; color: white;" type="button" class="btn" onclick="display_study_journal()" id="display_sj">Study Journal</button>
+        <button style="background-color: #9000FF; display:none; margin: 10px; color: white;" type="button" class="btn" onclick="hide_study_journal()" id="hide_sj">Study Journal</button>
+        <iframe id="sj" src="https://docs.google.com/document/d/1Lrx59-jsx4OJOLogk-vykmUL7yKyiSeSCxcim5-K-3U/edit?usp=sharing" width="800" height="300" title="Study Journal" style="text-align:center; display: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button style="background-color: #9000FF; margin: 10px; color: white;" type="button" class="btn" onclick="display_project_plan()" id="display_pp">Project Plan</button>
+        <button style="background-color: #9000FF; display:none; margin: 10px; color: white;" type="button" class="btn" onclick="hide_project_plan()" id="hide_pp">Project Plan</button>
+        <iframe id="pp" src="https://docs.google.com/document/d/1iicxZwL0Sfc2mNzfxLqNAFXM357XP-C96Gz30Cukj44/edit?usp=sharing" width="800" height="300" title="Project Plan" style="text-align:center; display: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-4">
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script type="text/javascript">
+    function display_study_journal() {
+        document.getElementById("sj").style.display = "block";
+        document.getElementById("hide_sj").style.display = "block";
+        document.getElementById("display_sj").style.display = "none";
+    }
+
+    function hide_study_journal() {
+        document.getElementById("sj").style.display = "none";
+        document.getElementById("display_sj").style.display = "block";
+        document.getElementById("hide_sj").style.display = "none";
+    }
+
+    function display_project_plan() {
+        document.getElementById("pp").style.display = "block";
+        document.getElementById("hide_pp").style.display = "block";
+        document.getElementById("display_pp").style.display = "none";
+    }
+
+    function hide_project_plan() {
+        document.getElementById("pp").style.display = "none";
+        document.getElementById("display_pp").style.display = "block";
+        document.getElementById("hide_pp").style.display = "none";
+    }
+
+    function display_pad_let() {
+        document.getElementById("pl").style.display = "block";
+        document.getElementById("hide_pl").style.display = "block";
+        document.getElementById("display_pl").style.display = "none";
+    }
+
+    function hide_pad_let() {
+        document.getElementById("pl").style.display = "none";
+        document.getElementById("display_pl").style.display = "block";
+        document.getElementById("hide_pl").style.display = "none";
+    }
+
+
+
+
+</script>
 
 {% endblock %}

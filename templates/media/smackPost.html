@@ -13,26 +13,27 @@
                 <fieldset>
                     <!-- made these fields required -->
                     <legend><span class="number" >1</span>Choose an Emotion:</legend>
-                    <select name="emotion" id="emotion">
-                        <option value="happy">Happy</option>
-                        <option value="sad">Sad</option>
-                        <option value="angry">Angry</option>
-                        <option value="excited">Excited</option>
-                    </select>
+                        <input type="radio" name="emotion" value="Happy" /> Happy
+                        <br>
+                        <input type="radio" name="emotion" value="Sad" /> Sad
+                        <br>
+                        <input type="radio" name="emotion" value="Angry" /> Angry
+                        <br>
+                        <input type="radio" name="emotion" value="Excited" /> Excited
                 </fieldset>
                 <fieldset>
-                    <legend><span class="number">3</span>Upload a photo:</legend>
+                    <!--legend><span class="number">3</span>Upload a photo:</legend>
                     <form action="/">
                         <input type="file" id="photo" name="photo">
                     </form>
-                </fieldset>
+                </fieldset-->
 
                 <fieldset>
                     <legend><span class="number">2</span>Your Update:</legend>
                     <textarea name="update" placeholder="Update"></textarea>
 
                     <button type="submit">Smack</button>
-
+                </fieldset>
                 </fieldset>
             </div>
         </form>

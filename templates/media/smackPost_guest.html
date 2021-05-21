@@ -4,52 +4,44 @@
 
 <div class="container">
 </div>
-    <div>
-        <header class="py-5 mt-5">
-<form method="post" id="sign-up">
-    <h1>Sign Up</h1>
-    <div style="display:grid; grid-template-columns: 1fr 1fr; grid-column-gap: 50px;">
-        <fieldset>
-            <!-- made these fields required -->
-            <legend><span class="number">1</span> Basic info</legend>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Username" required>
-            <label>PUSD School:</label>
-            <input type="radio" name="school" value="Del Norte High School" /> Del Norte High School
+<div>
+    <header class="py-5 mt-5">
+        <form action="/guestSmack/" method="POST" id="post">
+            <h1>Create a Smack</h1>
             <br>
-            <input type="radio" name="school" value="Rancho Bernardo High School" /> Rancho Bernardo High School
-            <br>
-            <input type="radio" name="school" value="Mount Carmel High School" /> Mount Carmel High School
-            <br>
-            <input type="radio" name="school" value="Westview High School" /> Westview High School
-            <br>
-            <br>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; grid-column-gap: 50px;">
+                <fieldset>
+                    <legend><span class="number">1</span>Name:</legend>
+                    <textarea name="name" placeholder="Name"></textarea>
+                </fieldset>
+                <fieldset>
+                    <!-- made these fields required -->
+                    <legend><span class="number" >2</span>Choose an Emotion:</legend>
+                    <input type="radio" name="emotion" value="Happy" /> Happy
+                    <br>
+                    <input type="radio" name="emotion" value="Sad" /> Sad
+                    <br>
+                    <input type="radio" name="emotion" value="Angry" /> Angry
+                    <br>
+                    <input type="radio" name="emotion" value="Excited" /> Excited
+                </fieldset>
+                <fieldset>
+                    <!--legend><span class="number">3</span>Upload a photo:</legend>
+                    <form action="/">
+                        <input type="file" id="photo" name="photo">
+                    </form>
+                </fieldset-->
 
-            <!-- same for minlength and maxlength: minlength="8" maxlength="20" we're using JS to do this.-->
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Password" >
-            <label for="confirmation">Confirm Password:</label>
-            <input type="password" id="confirmation" name="confirmation" placeholder="Confirm Password" >
-            <p class="show">show password</p>
+                    <fieldset>
+                        <legend><span class="number">3</span>Your Update:</legend>
+                        <textarea name="update" placeholder="Update"></textarea>
 
-            <div class="error">
-                <!-- if the user does not fill out the required elements or has something wrong we can tell the user with this information.-->
+                        <button type="submit">Smack</button>
+                    </fieldset>
+                </fieldset>
             </div>
-
-        </fieldset>
-
-        <fieldset>
-            <legend><span class="number">3</span> Your profile</legend>
-            <label for="bio">Bio:</label>
-            <textarea id="bio" name="bio" placeholder="Bio"></textarea>
-
-            <button type="submit">Sign Up</button>
-
-        </fieldset>
-
-    </div>
-</form>
-</header>
+        </form>
+    </header>
 </div>
 
 

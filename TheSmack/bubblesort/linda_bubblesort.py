@@ -1,38 +1,37 @@
 class linda:
-
+    #user will have a list inputted
     def __init__(self):
         self._lst = []
 
     def addValues(self, values):
+        #a for loop that appends the value to self._lst; credit to team member
         for value in values.split(","):
             self._lst.append(int(value))
 
 
-    # An optimized version of Bubble Sort
+    # The bubble sort algorithm that orders the list
     def sortingbubble(arr):
         n = len(arr)
-        # Traverse through all array elements
-        for i in range(n):
+        #goes through every array value
+        for a in range(n):
             swapped = False
-            # Last i elements are already
-            #  in place
-            for j in range(0, n-i-1):
-                # traverse the array from 0 to
-                # n-i-1. Swap if the element
-                # found is greater than the
-                # next element
-                if arr[j] > arr[j+1] :
-                    arr[j], arr[j+1] = arr[j+1], arr[j]
+            # the array has a range from 0 to n-a-1. The first value exchanges with the next value when greater
+            for b in range(0, n-a-1):
+                if arr[b] > arr[b+1] :
+                    arr[b], arr[b+1] = arr[b+1], arr[b]
                     swapped = True
-            # IF no two elements were swapped
-            # by inner loop, then break
+            # IF no 2 values are swapped by the loop, then the algorithm breaks;
             if swapped == False:
                 break
 
+
     def sort(self):
+        #calls the function sortingbubble to sort the list
         linda.sortingbubble(self._lst)
 
+        #makes the list empty
         results = []
+        #appends the results to a list
         for n in self._lst:
             results.append(str(n))
 

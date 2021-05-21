@@ -61,10 +61,11 @@ def signup():
         username = request.form['username']
         password = request.form['password']
         bio = request.form['bio']
+        school = request.form['school']
         #calls user_create function from user.py
-        user_create(username, password, bio)
+        user_create(username, password, school, bio)
 
-        return render_template("/users/profile.html", username=username, bio=bio)
+        return render_template("/users/profile.html", username=username, bio=bio, school=school)
     else:
         return render_template("/users/signup.html")
 
@@ -84,7 +85,7 @@ def login():
             #if validate_user = true, log user in and return profile.html template
             login_user(user)
             db.session.commit()
-            return render_template("users/profile.html", username=username, bio=user.bio)
+            return render_template("users/profile.html", username=username, bio=user.bio, school=user.school)
     else:
         print('Bar')
         #if validate_user = false, return login page

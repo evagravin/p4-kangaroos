@@ -1,0 +1,30 @@
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+
+app = Flask(__name__)
+db = SQLAlchemy(app)
+
+#database set up
+class Posts(db.Model):
+    username = db.Column(db.String(255), primary_key=True, nullable=False)
+    emotion = db.Column(db.String(255), nullable=False)
+    update = db.Column(db.String(255), nullable=False)
+    is_active = True
+    is_anonymous = False
+    is_authenticated = False
+    def get_id(self):
+        return self.username
+
+
+#function creates post
+def post_create(username, emotion, update):
+    print('User name is ' + username + ' emotion is ' + emotion + ' update is ' + update)
+
+    new_post = Posts(username=username, emotion=emotion, update=update)
+    db.session.add(new_post)
+    db.session.commit()
+
+
+
+

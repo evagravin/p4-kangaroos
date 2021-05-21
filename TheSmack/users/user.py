@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_login import LoginManager
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -10,6 +9,7 @@ db = SQLAlchemy(app)
 class User(db.Model):
     username = db.Column(db.String(255), primary_key=True, nullable=False)
     password = db.Column(db.String(255), nullable=False)
+    school = db.Column(db.String(255), nullable=False)
     bio = db.Column(db.String(256), nullable=False)
     is_active = True
     is_anonymous = False
@@ -19,12 +19,13 @@ class User(db.Model):
 
 
 #function creates user
-def user_create(username, password, bio):
-    print('User name is ' + username + ' password is ' + password + ' bio is ' + bio)
+def user_create(username, password, school, bio):
+    print('User name is ' + username + ' password is ' + password + ' school is ' + school + ' bio is ' + bio)
 
-    new_user = User(username=username, password=password, bio=bio)
+    new_user = User(username=username, password=password, school=school, bio=bio)
     db.session.add(new_user)
     db.session.commit()
+
 
 
 #function for logging in

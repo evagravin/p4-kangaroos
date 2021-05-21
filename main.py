@@ -1,3 +1,4 @@
+import requests
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp, logout_bp
@@ -7,7 +8,8 @@ from TheSmack.minilabs.app import minilab_bp
 from TheSmack.bubblesort.app import bubblesort_bp
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
-import requests
+
+
 app = Flask(__name__)
 
 

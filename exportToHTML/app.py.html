@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>app.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+app.py</font>
+</center></td></tr></table>
+<pre><span class="s0">from </span><span class="s1">TheSmack.minilabs.minilab </span><span class="s0">import </span><span class="s1">Calculations</span>
+
+<span class="s1">minilab_bp = Blueprint(</span><span class="s2">'minilab Menu'</span><span class="s0">, </span><span class="s1">__name__</span><span class="s0">,</span>
+                           <span class="s1">template_folder=</span><span class="s2">'templates'</span><span class="s0">,</span>
+                           <span class="s1">static_folder=</span><span class="s2">'static'</span><span class="s1">)</span>
+
+<span class="s1">@minilab_bp.route(</span><span class="s2">'/student' </span><span class="s0">, </span><span class="s1">methods=[</span><span class="s2">'GET'</span><span class="s0">, </span><span class="s2">'POST'</span><span class="s1">])</span>
+<span class="s0">def </span><span class="s1">student_minilab():</span>
+    <span class="s0">if </span><span class="s1">request.method == </span><span class="s2">'POST'</span><span class="s1">:</span>
+        <span class="s1">num = int(request.form[</span><span class="s2">'num'</span><span class="s1">])</span>
+        <span class="s0">return </span><span class="s1">render_template(</span><span class="s2">&quot;/minilabs/minilab.html&quot;</span><span class="s0">, </span><span class="s1">calculations=Calculations(num))</span>
+    <span class="s0">return </span><span class="s1">render_template(</span><span class="s2">&quot;/minilabs/minilab.html&quot;</span><span class="s0">, </span><span class="s1">calculations=Calculations.num)</span></pre>
+</body>
+</html>

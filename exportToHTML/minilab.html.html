@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>minilab.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #a5c261;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+minilab.html</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;!DOCTYPE </span><span class="s1">html</span><span class="s0">&gt;</span>
+<span class="s2">{% extends &quot;layout.html&quot; %}</span>
+<span class="s2">{% block pagecontent %}</span>
+<span class="s0">&lt;style&gt;</span>
+
+
+<span class="s0">&lt;/style&gt;</span>
+
+<span class="s0">&lt;html&gt;</span>
+<span class="s0">&lt;body&gt;</span>
+<span class="s0">&lt;div </span><span class="s1">class</span><span class="s3">=&quot;container&quot;</span><span class="s0">&gt;</span>
+    <span class="s0">&lt;div </span><span class="s1">class</span><span class="s3">=&quot;pt-5 text-white&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;header </span><span class="s1">class</span><span class="s3">=&quot;py-5 mt-5&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;h1 </span><span class="s1">class</span><span class="s3">=&quot;display-4&quot;</span><span class="s0">&gt;</span><span class="s2">Mini Lab</span><span class="s0">&lt;/h1&gt;</span>
+            <span class="s0">&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">font-size:20px</span><span class="s3">&quot; </span><span class="s0">&gt; </span><span class="s2">This tool can help compute American measurements to international measurements, compute Fibonacci numbers, and calculate the root of a number using Newton's calculation!</span><span class="s0">&lt;/p&gt;</span>
+        <span class="s0">&lt;/header&gt;</span>
+    <span class="s0">&lt;/div&gt;</span>
+    <span class="s0">&lt;form </span><span class="s1">method</span><span class="s3">=&quot;POST&quot; </span><span class="s1">ID</span><span class="s3">=&quot;myForm&quot; </span><span class="s1">action</span><span class="s3">=/minilab/student </span><span class="s1">class</span><span class="s3">=&quot;form1&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;p&gt;</span>
+            <span class="s0">&lt;label </span><span class="s1">for</span><span class="s3">=&quot;num&quot; </span><span class="s1">class</span><span class="s3">=&quot;pt-5 text-white&quot;</span><span class="s0">&gt;</span><span class="s2">Input:</span><span class="s0">&lt;/label&gt;</span>
+            <span class="s0">&lt;input </span><span class="s1">id</span><span class="s3">=&quot;num&quot; </span><span class="s1">name</span><span class="s3">=&quot;num&quot; </span><span class="s1">placeholder</span><span class="s3">=&quot;Enter Number&quot; </span><span class="s1">type</span><span class="s3">=&quot;text&quot; </span><span class="s1">required</span><span class="s3">=&quot;required&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;label </span><span class="s1">for</span><span class="s3">=&quot;num&quot; </span><span class="s1">class</span><span class="s3">=&quot;pt-5 text-white&quot;</span><span class="s0">&gt;&lt;/label&gt;</span>
+        <span class="s0">&lt;/p&gt;</span>
+
+
+
+        <span class="s0">&lt;/table&gt;</span>
+        <span class="s0">&lt;table </span><span class="s1">class</span><span class="s3">=&quot;table&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;thead&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;/thead&gt;</span>
+            <span class="s0">&lt;tbody&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+                <span class="s0">&lt;th </span><span class="s1">scope</span><span class="s3">=&quot;row&quot;</span><span class="s0">&gt;&lt;/th&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#F92006;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.num}} DEGREES FAHRENHEIT </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;</span><span class="s2">=</span><span class="s0">&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#F98706;</span><span class="s3">&quot;</span><span class="s0">&gt; </span><span class="s2">{{calculations.cel2far}} DEGREES CELSIUS </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+                <span class="s0">&lt;th </span><span class="s1">scope</span><span class="s3">=&quot;row&quot;</span><span class="s0">&gt;&lt;/th&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#F9DC06;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.num}} POUNDS (lbs) </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;</span><span class="s2">=</span><span class="s0">&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color: #41F906;</span><span class="s3">&quot;</span><span class="s0">&gt; </span><span class="s2">{{calculations.lbs2g}} GRAMS (g)</span><span class="s0">&lt;/p&gt; &lt;/h1&gt;&lt;/td&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+                <span class="s0">&lt;th </span><span class="s1">scope</span><span class="s3">=&quot;row&quot;</span><span class="s0">&gt;&lt;/th&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#0687F9;</span><span class="s3">&quot;</span><span class="s0">&gt; </span><span class="s2">{{calculations.num}} YARDS (yds) </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;</span><span class="s2">=</span><span class="s0">&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color: #8006F9;</span><span class="s3">&quot;</span><span class="s0">&gt; </span><span class="s2">{{calculations.y2m}} METERS (m)</span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+                <span class="s0">&lt;th </span><span class="s1">scope</span><span class="s3">=&quot;row&quot;</span><span class="s0">&gt;&lt;/th&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color: #FF1493;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.num}} GRAMS (g)</span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;</span><span class="s2">=</span><span class="s0">&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#F92006;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.g2oz}} OUNCES (oz) </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+                <span class="s0">&lt;th </span><span class="s1">scope</span><span class="s3">=&quot;row&quot;</span><span class="s0">&gt;&lt;/th&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#F98706;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.num}} KILOGRAMS (kg) </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;</span><span class="s2">=</span><span class="s0">&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#F9DC06;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.kg2lbs}} POUNDS (lbs) </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+                <span class="s0">&lt;th </span><span class="s1">scope</span><span class="s3">=&quot;row&quot;</span><span class="s0">&gt;&lt;/th&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#000000;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.num}} Fibonacci </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;</span><span class="s2">=</span><span class="s0">&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#000000;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.fibonacci}}  </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;tr&gt;</span>
+                <span class="s0">&lt;th </span><span class="s1">scope</span><span class="s3">=&quot;row&quot;</span><span class="s0">&gt;&lt;/th&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#000000;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.num}} Newtons </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;</span><span class="s2">=</span><span class="s0">&lt;/td&gt;</span>
+                <span class="s0">&lt;td&gt;&lt;p </span><span class="s1">style</span><span class="s3">=&quot;</span><span class="s2">color:#000000;</span><span class="s3">&quot;</span><span class="s0">&gt;  </span><span class="s2">{{calculations.newton}}  </span><span class="s0">&lt;/p&gt;&lt;/td&gt;</span>
+            <span class="s0">&lt;/tr&gt;</span>
+            <span class="s0">&lt;/tbody&gt;</span>
+        <span class="s0">&lt;/table&gt;</span>
+
+        <span class="s0">&lt;p&gt;</span>
+            <span class="s0">&lt;button </span><span class="s1">class</span><span class="s3">=&quot;button&quot;</span><span class="s0">&gt;&lt;span&gt;</span><span class="s2">Compute!</span><span class="s0">&lt;/span&gt;&lt;/button&gt;</span>
+        <span class="s0">&lt;/p&gt;</span>
+
+
+    <span class="s0">&lt;/form&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+    <span class="s0">&lt;br&gt;</span>
+
+
+<span class="s0">&lt;/div&gt;</span>
+<span class="s0">&lt;/body&gt;</span>
+<span class="s0">&lt;/html&gt;</span>
+<span class="s0">&lt;style&gt;</span>
+<span class="s2">.button {</span>
+  <span class="s2">border-radius: 4px;</span>
+  <span class="s2">background-color: #cf8ce6;</span>
+  <span class="s2">border: none;</span>
+  <span class="s2">color: #FFFFFF;</span>
+  <span class="s2">text-align: center;</span>
+  <span class="s2">font-size: 15px;</span>
+  <span class="s2">padding: 20px;</span>
+  <span class="s2">width: 125px;</span>
+  <span class="s2">transition: all 0.5s;</span>
+  <span class="s2">cursor: pointer;</span>
+<span class="s2">}</span>
+
+<span class="s2">.button span {</span>
+  <span class="s2">cursor: pointer;</span>
+  <span class="s2">display: inline-block;</span>
+  <span class="s2">position: relative;</span>
+  <span class="s2">transition: 0.5s;</span>
+<span class="s2">}</span>
+
+<span class="s2">.button span:after {</span>
+  <span class="s2">content: '\00bb';</span>
+  <span class="s2">position: absolute;</span>
+  <span class="s2">opacity: 0;</span>
+  <span class="s2">top: 0;</span>
+  <span class="s2">right: -20px;</span>
+  <span class="s2">transition: 0.5s;</span>
+<span class="s2">}</span>
+
+<span class="s2">.button:hover span {</span>
+  <span class="s2">padding-right: 25px;</span>
+<span class="s2">}</span>
+
+<span class="s2">.button:hover span:after {</span>
+  <span class="s2">opacity: 1;</span>
+  <span class="s2">right: 0;</span>
+<span class="s2">}</span>
+
+<span class="s2">@charset &quot;UTF-8&quot;;</span>
+<span class="s2">@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);</span>
+
+<span class="s2">body {</span>
+  <span class="s2">font-family: 'Open Sans', sans-serif;</span>
+  <span class="s2">font-weight: 300;</span>
+  <span class="s2">color:#ffffff;</span>
+  <span class="s2">background-color:#1F2739;</span>
+<span class="s2">}</span>
+
+
+<span class="s2">h2 a {</span>
+  <span class="s2">font-weight: 700;</span>
+  <span class="s2">text-transform: uppercase;</span>
+  <span class="s2">color: #ffffff;</span>
+  <span class="s2">text-decoration: none;</span>
+<span class="s2">}</span>
+
+
+
+    <span class="s2">.title {</span>
+        <span class="s2">color: white;</span>
+        <span class="s2">text-align: center;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.text {</span>
+        <span class="s2">color: white;</span>
+        <span class="s2">text-align: left;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.sub-title {</span>
+        <span class="s2">color: white;</span>
+        <span class="s2">text-align: center;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.input {</span>
+        <span class="s2">margin-left: 50px;</span>
+        <span class="s2">margin-right: 50px;</span>
+
+    <span class="s2">}</span>
+
+
+<span class="s0">&lt;/style&gt;</span>
+<span class="s2">{% endblock %}</span>
+
+
+
+
+
+
+</pre>
+</body>
+</html>

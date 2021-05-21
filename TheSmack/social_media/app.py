@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, app, redirect, url_for
 from flask_login import LoginManager,login_required, current_user, logout_user
 from TheSmack.social_media.post import post_create
-from TheSmack.social_media.anon import anon_create
+from TheSmack.social_media.guest import guest_create
 
 
 
@@ -72,8 +72,8 @@ def GuestSmack():
         name = request.form['name']
         emotion = request.form['emotion']
         update = request.form['update']
-        anon_create(name, emotion, update)
-        return render_template("/smacks.html")
+        guest_create(name, emotion, update)
+        return render_template("/media/smacks.html")
     else:
         print('bar')
     return render_template("/media/smackPost_guest.html")

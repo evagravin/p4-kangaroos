@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, app, redirect, url_for
 from flask_login import LoginManager,login_required, current_user, logout_user
 from TheSmack.social_media.post import post_create
-from TheSmack.users.user import User
+from TheSmack.social_media.anon import anon_create
 
 
 
@@ -25,6 +25,9 @@ aboutus_bp = Blueprint('aboutus', __name__,
                        template_folder='templates',
                        static_folder='static')
 smackmenu_bp = Blueprint('smackmenu', __name__,
+                         template_folder='templates',
+                         static_folder='static')
+guestSmack_bp = Blueprint('anonSmack', __name__,
                          template_folder='templates',
                          static_folder='static')
 
@@ -52,7 +55,7 @@ def results():
     return "Search results page"
 
 @createSmack_bp.route('/', methods=['POST', 'GET'])
-@login_required
+#@login_required
 def createSmack():
     if request.method == 'POST':
         emotion = request.form['emotion']
@@ -62,6 +65,19 @@ def createSmack():
     else:
         print('bar')
     return render_template("/media/smackPost.html")
+
+@guestSmack_bp.route('/', methods=['POST', 'GET'])
+def GuestSmack():
+    if request.method == 'POST':
+        name = request.form['name']
+        emotion = request.form['emotion']
+        update = request.form['update']
+        anon_create(name, emotion, update)
+        return render_template("/smacks.html")
+    else:
+        print('bar')
+    return render_template("/media/smackPost_guest.html")
+
 
 
 @smackDM_bp.route('/')

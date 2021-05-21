@@ -71,14 +71,22 @@ def risa_bubblesort():
         return render_template("/bubbleSort/risa_bubblesort.html", calc1=calc1, calc2=calc2, calc3=calc3, calc4=calc4, calc5=calc5, calc6=calc6, calc7=calc7, calc8=calc8, calc9=calc9, calc10=calc10, mynumlist=mynumlist, list_sorted=list_sorted, mycalclist=mycalclist)
     return render_template("/bubbleSort/risa_bubblesort.html")
 
-@bubblesort_bp.route('/linda' , methods=['GET', 'POST'])
-def linda_minilab():
+
+#a decorator that prompts a specific page of the website
+@bubblesort_bp.route('/linda', methods=['GET', 'POST'])
+#define route function
+def linda_bubblesort():
+    #initialize the variables unsort and sort to 0
     unsort = 0
     sort = 0
+    #use POST method to add/update data
     if request.method == 'POST':
+        #request values from form
         values = request.form['list']
         l = linda()
         l.addValues(values)
+        #pass the values into the list
         sort = l.sort()
         unsort = request.form['list']
     return render_template("/bubblesort/linda_bubblesort.html", sort=sort, unsort=unsort)
+

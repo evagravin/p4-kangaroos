@@ -2,7 +2,7 @@ import requests
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp, logout_bp
-from TheSmack.social_media.app import createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp, guestSmack_bp
+from TheSmack.social_media.app import createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp, guestSmack_bp, smacks_bp
 from TheSmack.users.user import User
 from TheSmack.minilabs.app import minilab_bp
 from TheSmack.bubblesort.app import bubblesort_bp
@@ -37,6 +37,7 @@ app.register_blueprint(smackmenu_bp, url_prefix='/smackmenu')
 app.register_blueprint(logout_bp, url_prefix='/logout')
 app.register_blueprint(bubblesort_bp, url_prefix='/bubblesort')
 app.register_blueprint(guestSmack_bp, url_prefix='/guestSmack')
+app.register_blueprint(smacks_bp, url_prefix='/smacks')
 
 
 #home page route

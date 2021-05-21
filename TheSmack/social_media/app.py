@@ -30,7 +30,12 @@ smackmenu_bp = Blueprint('smackmenu', __name__,
 guestSmack_bp = Blueprint('anonSmack', __name__,
                          template_folder='templates',
                          static_folder='static')
-
+smacks_bp = Blueprint('allSmacks', __name__,
+                      template_folder='templates',
+                      static_folder='static')
+@smacks_bp.route('/')
+def allSmacks():
+    return render_template("/media/smacks.html")
 
 @login_required
 def logout():

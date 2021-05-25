@@ -22,6 +22,9 @@ success_bp = Blueprint('success', __name__,
                        template_folder='templates')
 logout_bp = Blueprint('logout', __name__,
                       template_folder='templates')
+groups_bp = Blueprint('groups', __name__,
+                      template_folder='templates')
+
 
 app = Flask(__name__)
 
@@ -40,6 +43,11 @@ def usermenu():
 @profile_bp.route('/')
 def profile():
     return "Profile page"
+
+@groups_bp.route('/')
+def groups():
+    return "Groups page"
+
 
 @signup_bp.route('/' , methods = ['POST', 'GET'])
 def signup():

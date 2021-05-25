@@ -6,7 +6,7 @@ app = Flask(__name__)
 db = SQLAlchemy(app)
 
 #database set up
-class Anon(db.Model):
+class Guest(db.Model):
     name = db.Column(db.String(255), primary_key=True, nullable=False)
     emotion = db.Column(db.String(255), nullable=False)
     update = db.Column(db.String(255), nullable=False)
@@ -19,9 +19,9 @@ class Anon(db.Model):
 
 
 #function creates anon post
-def anon_create(name, emotion, update):
+def guest_create(name, emotion, update):
     print(' emotion is ' + emotion + ' update is ' + update)
 
-    anon_post = Anon(name=name, emotion=emotion, update=update)
-    db.session.add(anon_post)
+    guest_post = Guest(name=name, emotion=emotion, update=update)
+    db.session.add(guest_post)
     db.session.commit()

@@ -44,7 +44,7 @@ def logout():
 
 @aboutus_bp.route('/')
 def aboutus():
-    return render_template ("digitalPortfolios.html")
+    return render_template("digitalPortfolios.html")
 
 @smackmenu_bp.route('/')
 def smackmenu():

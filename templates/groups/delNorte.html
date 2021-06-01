@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block pagecontent %}
+{% include 'buttonStyles.html' %}
+{% include 'tableStyles.html' %}
+
+<html>
+<body>
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">Del Norte Group</h1>
+            <p style="font-size:20px" > See all the members of this group below! <a href="/login">Login</a> to interact and see direct posts made into the group!</p>
+        </header>
+    </div>
+
+    <table class="container">
+        <thead>
+        <tr style="word-break:break-all">
+            <th width="400px"><h1>Username</h1></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr style="word-break:break-all;">
+            <td>{{list}}</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+
+{% endblock %}

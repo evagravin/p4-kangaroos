@@ -44,10 +44,6 @@ def usermenu():
 def profile():
     return "Profile page"
 
-@groups_bp.route('/')
-def groups():
-    return "Groups page"
-
 
 @signup_bp.route('/' , methods = ['POST', 'GET'])
 def signup():

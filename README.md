@@ -26,6 +26,9 @@ Download our project via Intellij to view our blueprint layout and run our websi
  - Through the use of flask and jinja, the blueprints of our project was created.
  - Documents were embedded as well as individual mini projects in the 'Digital Portfolio section' section of the site. 
 
+## Umbrella Ticket 6/1
+
+### [Here is the link to our Umbrella Ticket in our Scrum Board]() 
 
 ## Individual Work Week of 3/26-26
 

@@ -28,7 +28,7 @@ Download our project via Intellij to view our blueprint layout and run our websi
 
 ## Umbrella Ticket 6/1
 
-### [Here is the link to our Umbrella Ticket in our Scrum Board]() 
+### [Here is the link to our Umbrella Ticket in our Scrum Board](https://github.com/evagravin/p4-kangaroos/issues/27) 
 
 ## Individual Work Week of 3/26-26
 

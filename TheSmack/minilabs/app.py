@@ -23,7 +23,7 @@ def ava_minilab():
         median = m.getMedian()
         mode = m.getMode()
         list = m.getList()
-    return render_template("/minilabs/ava-risa-minilab.html", mean=mean, median=median, mode=mode, list=list)
+    return render_template("/minilabs/ava-minilab.html", mean=mean, median=median, mode=mode, list=list)
 
 
 @minilab_bp.route('/risa' , methods=['GET', 'POST'])

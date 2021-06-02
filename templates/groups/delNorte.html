@@ -22,10 +22,11 @@
         </tr>
         </thead>
         <tbody>
+        {%for row in users%}
         <tr style="word-break:break-all;">
-            <td>{{list}}</td>
-            <td>{{bio}}</td>
-
+            <td>{{row.username}}</td>
+            <td>{{row.bio}}</td>
+        {% endfor %}
         </tr>
 
         </tbody>

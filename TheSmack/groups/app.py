@@ -1,4 +1,5 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template
+from TheSmack.users.user import get_users
 
 
 groups_bp = Blueprint('groups', __name__,
@@ -12,7 +13,8 @@ def groups():
 
 @groups_bp.route('/delnorte')
 def delnorte_groups():
-    return render_template("/groups/delNorte.html")
+    users=get_users("Del Norte High School")
+    return render_template("/groups/delNorte.html", users=users)
 
 
 @groups_bp.route('/mtCarmel', methods=['GET' 'POST'])

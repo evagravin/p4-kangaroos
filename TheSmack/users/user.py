@@ -38,6 +38,10 @@ def validate_user(username, password):
             return testuser
     return None
 
+def get_users(school):
+    return User.query.filter_by(school=school).all()
+
+
 
 
 

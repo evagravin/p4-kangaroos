@@ -20,4 +20,3 @@ def delnorte_groups():
 @groups_bp.route('/mtCarmel', methods=['GET' 'POST'])
 def mtCarmel_groups():
     return render_template("/groups/mtCarmel.html")
-

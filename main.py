@@ -56,6 +56,9 @@ def index():
 def load_user(user_id):
     return User.query.get(user_id)
 
+@app.route('/faq')
+def frequently_asked_questions():
+    return render_template("/faq.html")
 
 if __name__ == "__main__":
     app.run(port='3000', host='127.0.0.1')

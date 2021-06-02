@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block pagecontent %}
+
+
+<html>
+<body>
+<div>
+    <div class="container">
+        <div class="pt-5 text-white">
+            <header class="py-5 mt-5">
+                <h1 class="display-4">Frequently Asked Questions</h1>
+
+            </header>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How can I post a Smack?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Go to the navbar and click on Create a Smack. From there, you can choose the mehtod you want to do (a private DM or smack for everyone to see). Each Smack is made up of a message, emotion, and emoji! You can type and select how you are feeling. </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Where can I find information about how the website was made?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Go to the Digital Portfolios page from the navbar. Below the About Us section, you can find the How This Website Was Made Section. There are links to different resources and content that give more information aboutt this website!</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    How do I make an account?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Go to the login page of our website. If you have not made an account, you can click on sign up here at the bottom of the page. From there you can make an account by putting in your basic info and school. Then return to the login page to login!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<style>
+.accordion-button {
+  border-radius: 4px;
+  background-color: #cf8ce6;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 600px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.accordion-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.accordion-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.accordion-button:hover span {
+  padding-right: 25px;
+}
+
+.accordion-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<script>
+var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+var collapseList = collapseElementList.map(function (collapseEl) {
+  return new bootstrap.Collapse(collapseEl)
+})
+</script>
+
+</html>
+{% endblock %}

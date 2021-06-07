@@ -42,7 +42,7 @@ def linda_minilab():
         sum = Sum(num1, num2)
         print(f"{sum.term1}")
         return render_template("/minilabs/linda-risa-minilab.html", sum=sum)
-    return render_template("/minilabs/linda-risa-minilab.html", sum=Sum(0,0))
+    return render_template("/minilabs/linda-minilab.html", sum=Sum(0,0))
 
 @minilab_bp.route('/eva' , methods=['GET', 'POST'])
 def eva_minilab():
@@ -55,7 +55,7 @@ def eva_minilab():
         foil = Foil(num1, num2, num3, num4)
         print(f"{foil.term1}{foil.term2}{foil.term3}{foil.term4}")
         return render_template("/minilabs/eva-risa-minilab.html", foil=foil, list=list)
-    return render_template("/minilabs/eva-risa-minilab.html", foil=Foil(0,0,0,0))
+    return render_template("/minilabs/eva-minilab.html", foil=Foil(0,0,0,0))
 
 
 

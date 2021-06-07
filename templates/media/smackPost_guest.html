@@ -12,18 +12,18 @@
             <div style="display:grid; grid-template-columns: 1fr 1fr; grid-column-gap: 50px;">
                 <fieldset>
                     <legend><span class="number">1</span>Name:</legend>
-                    <textarea name="name" placeholder="Name"></textarea>
+                    <textarea name="name" required="required" placeholder="Name"></textarea>
                 </fieldset>
                 <fieldset>
                     <!-- made these fields required -->
                     <legend><span class="number" >2</span>Choose an Emotion:</legend>
-                    <input type="radio" name="emotion" value="Happy" /> Happy
+                    <input type="radio" name="emotion" required="required" value="Happy" /> Happy
                     <br>
-                    <input type="radio" name="emotion" value="Sad" /> Sad
+                    <input type="radio" name="emotion" required="required" value="Sad" /> Sad
                     <br>
-                    <input type="radio" name="emotion" value="Angry" /> Angry
+                    <input type="radio" name="emotion" required="required" value="Angry" /> Angry
                     <br>
-                    <input type="radio" name="emotion" value="Excited" /> Excited
+                    <input type="radio" name="emotion" required="required" value="Excited" /> Excited
                 </fieldset>
                 <fieldset>
                     <!--legend><span class="number">3</span>Upload a photo:</legend>
@@ -34,7 +34,7 @@
 
                     <fieldset>
                         <legend><span class="number">3</span>Your Update:</legend>
-                        <textarea name="update" placeholder="Update"></textarea>
+                        <textarea name="update" required="required" placeholder="Update"></textarea>
 
                         <button type="submit">Smack</button>
                     </fieldset>

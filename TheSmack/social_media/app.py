@@ -79,7 +79,8 @@ def GuestSmack():
         emotion = request.form['emotion']
         update = request.form['update']
         guest_create(name, emotion, update)
-        return render_template("/media/smacks.html")
+        users = Guest.query.order_by(Guest.name.desc()).all()
+        return render_template("/media/smacks.html", users=users)
     else:
         print('bar')
     return render_template("/media/smackPost_guest.html")

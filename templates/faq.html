@@ -21,7 +21,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    How can I post a Smack?
+                    How can I post a Smack? ^
                 </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -31,7 +31,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Where can I find information about how the website was made?
+                    Where can I find information about how the website was made? ^
                 </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -41,7 +41,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    How do I make an account?
+                    How do I make an account? ^
                 </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -53,6 +53,7 @@
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 <style>
 .accordion-button {
@@ -63,9 +64,10 @@
   text-align: center;
   font-size: 15px;
   padding: 20px;
-  width: 600px;
   transition: all 0.5s;
   cursor: pointer;
+  padding-left: 25px;
+  margin-left: 50
 }
 
 .accordion-button span {
@@ -73,6 +75,7 @@
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  margin-left: 50
 }
 
 .accordion-button span:after {
@@ -82,9 +85,11 @@
   top: 0;
   right: -20px;
   transition: 0.5s;
+  margin-left: 50
 }
 
 .accordion-button:hover span {
+  padding-right: 25px;
   padding-right: 25px;
 }
 
@@ -92,6 +97,11 @@
   opacity: 1;
   right: 0;
 }
+
+.accordion-body {
+    margin-left: 30px
+}
+
 </style>
 
 <script>

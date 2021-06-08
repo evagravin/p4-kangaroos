@@ -22,8 +22,22 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Risa Iwazaki | [Github](https://github.com/risaiwazaki) |
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
-## Progress of Main Website Features 
-- [ ]
+## Progress of Main Website Features
+links will be inserted once the runtime link works
+- Completed:
+ - Users able to create and log into their accounts
+ - Any guest is able to post a Smack 
+  - All 'Guest Smacks' are posted on one page
+ - Digital Portfolios w/ individual minilabs 
+ - FAQs
+ - Groups
+  - Sign up to be a part of a group
+  - See all users in a group
+- In Progress:
+ - Personal chat/DMs
+ - Create smack as a logged in user and display posts on profile
+ - Quote of the day
+ - Trending accounts
 
 ## How This Project Was Made:
  - Through the use of flask and jinja, the blueprints of our project was created.

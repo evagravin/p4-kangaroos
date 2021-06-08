@@ -2,16 +2,8 @@
 # _by the p4-kangaroos_
 TheSmack is an aspiring social media site where users can share messages and emotions with friends, using inspiration from Twitter and TheSLAP.
 
-
-## [Project Plan](https://docs.google.com/document/d/1iicxZwL0Sfc2mNzfxLqNAFXM357XP-C96Gz30Cukj44/edit)
-
-## [TheSmack Website URL](http://goodtunes.cf/)
-
-## [Github Issues](https://github.com/evagravin/p4-kangaroos/issues)
-
-## [Scrum Board](https://github.com/evagravin/p4-kangaroos/projects/1)
-
-Download our project via Intellij to view our blueprint layout and run our website, or view the Github files!
+## Links
+### [Project Plan](https://docs.google.com/document/d/1iicxZwL0Sfc2mNzfxLqNAFXM357XP-C96Gz30Cukj44/edit) || [TheSmack Website URL](http://goodtunes.cf/) || [Github Issues](https://github.com/evagravin/p4-kangaroos/issues) || [Scrum Board](https://github.com/evagravin/p4-kangaroos/projects/1)
 
 
 ## Table of Collaborators:

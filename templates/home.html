@@ -16,6 +16,14 @@
         <div class="card-header" style="text-color: white">
             Most Recent Smack
         </div>
+        {%for row in recent%}
+        <tr style="word-break:break-all;">
+            <td>{{row.name}}</td>
+            <td>{{row.emotion}}</td>
+            <td>{{row.update}}</td>
+        </tr>
+        </tbody>
+        {% endfor %}
         <div class="card-body">
 
         </div>

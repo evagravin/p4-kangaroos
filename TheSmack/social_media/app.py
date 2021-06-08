@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, app, redirect, url_for
 from flask_login import LoginManager,login_required, current_user, logout_user
 from TheSmack.social_media.post import post_create
-from TheSmack.social_media.guest import guest_create
+from TheSmack.social_media.guest import guest_create, Guest
 
 
 
@@ -35,7 +35,8 @@ smacks_bp = Blueprint('allSmacks', __name__,
                       static_folder='static')
 @smacks_bp.route('/')
 def allSmacks():
-    return render_template("/media/smacks.html")
+    users = Guest.query.order_by(Guest.name.desc()).all()
+    return render_template("/media/smacks.html", users=users)
 
 @login_required
 def logout():
@@ -78,7 +79,8 @@ def GuestSmack():
         emotion = request.form['emotion']
         update = request.form['update']
         guest_create(name, emotion, update)
-        return render_template("/media/smacks.html")
+        users = Guest.query.order_by(Guest.name.desc()).all()
+        return render_template("/media/smacks.html", users=users)
     else:
         print('bar')
     return render_template("/media/smackPost_guest.html")

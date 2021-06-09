@@ -48,12 +48,12 @@ app.register_blueprint(groups_bp, url_prefix='/groups')
 def index():
     most_recent_smack = Guest.query.order_by(Guest.name.desc()).all()
     # call to random joke web api
-    url = 'https://api.quotable.io/random'
-    response = requests.get(url)
-    st = response.json()
-    quote = st['content']
-    author = st['author']
-    return render_template("home.html", recent=most_recent_smack, quote=quote, author=author)
+    #url = 'https://api.quotable.io/random'
+    #response = requests.get(url)
+    #st = response.json()
+    #quote = st['content']
+    #author = st['author']
+    return render_template("home.html", recent=most_recent_smack)
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -64,4 +64,4 @@ def frequently_asked_questions():
     return render_template("/faq.html")
 
 if __name__ == "__main__":
-    app.run(port='3000', host='127.0.0.1', debug=True)
+    app.run(port='3000', host='127.0.0.1')

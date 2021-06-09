@@ -2,16 +2,8 @@
 # _by the p4-kangaroos_
 TheSmack is an aspiring social media site where users can share messages and emotions with friends, using inspiration from Twitter and TheSLAP.
 
-
-## [Project Plan](https://docs.google.com/document/d/1iicxZwL0Sfc2mNzfxLqNAFXM357XP-C96Gz30Cukj44/edit)
-
-## [TheSmack Website URL](http://goodtunes.cf/)
-
-## [Github Issues](https://github.com/evagravin/p4-kangaroos/issues)
-
-## [Scrum Board](https://github.com/evagravin/p4-kangaroos/projects/1)
-
-Download our project via Intellij to view our blueprint layout and run our website, or view the Github files!
+## Links
+### [Project Plan](https://docs.google.com/document/d/1iicxZwL0Sfc2mNzfxLqNAFXM357XP-C96Gz30Cukj44/edit) || [TheSmack Website URL](http://goodtunes.cf/) || [Github Issues](https://github.com/evagravin/p4-kangaroos/issues) || [Scrum Board](https://github.com/evagravin/p4-kangaroos/projects/1)
 
 
 ## Table of Collaborators:
@@ -22,44 +14,28 @@ Download our project via Intellij to view our blueprint layout and run our websi
 |Risa Iwazaki | [Github](https://github.com/risaiwazaki) |
 |Linda Long | [Github](https://github.com/lindalonglong) |
 
+## Progress of Main Website Features
+links will be inserted once the runtime link works
+* Completed:
+  - Users able to create and log into their accounts
+  - Any guest is able to post a Smack 
+    - All 'Guest Smacks' are posted on one page
+  - Digital Portfolios w/ individual minilabs 
+  - FAQs
+  - Groups
+   - Sign up to be a part of a group
+   - See all users in a group
+* In Progress:
+  - Personal chat/DMs
+  - Create smack as a logged in user and display posts on profile
+  - Quote of the day
+  - Trending accounts
+
 ## How This Project Was Made:
  - Through the use of flask and jinja, the blueprints of our project was created.
  - Documents were embedded as well as individual mini projects in the 'Digital Portfolio section' section of the site. 
 
-## Umbrella Ticket 6/1
 
-### [Here is the link to our Umbrella Ticket in our Scrum Board](https://github.com/evagravin/p4-kangaroos/issues/27) 
-
-## Individual Work Week of 3/26-26
-
-### Ava: 
-- In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57225859)
-- Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57744261)
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/425ea494f7832df62c3e75edd081d86ab8582ab2) Towards In Progress Story/Ticket
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/6a21149482fbf045f9c72e3e286ea1533efe88a9) Toward Mini Lab
-
-### Risa:
-- In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57226174)
-- Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57546949)
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/bc9ff513d9388e85d6c92989e10d238d916da396) Towards In Progress Story/Ticket
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/0b5f4303f0374b657593720c84095c7e371407ec) Toward Mini Lab
-
-### Eva:
-- In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57226156)
-- Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57748574)
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/62f55d2b5c19fab68eb6d3e98d25f48c47b62cde) Towards In Progress Story/Ticket
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/commit/a1d8e8622c432b2a4f4ff7926e86750c957d5105) Toward Mini Lab
-
-### Linda:
-- In Progress (Now Completed) [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57458729)
-- Backlog [Story/Ticket](https://github.com/evagravin/p4-kangaroos/projects/1#card-57546498)
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/blob/main/templates/aboutus.html) Towards In Progress Story/Ticket
-- [Github Commit](https://github.com/evagravin/p4-kangaroos/blob/main/templates/minilabs/linda-minilab.html) Toward Mini Lab
-
-
-### Everyone:
-- [Story/Ticket 1](https://github.com/evagravin/p4-kangaroos/projects/1#card-57226374)
-- [Story/Ticket 2 - Project Plan](https://github.com/evagravin/p4-kangaroos/projects/1#card-57547049)
 
 ## College Board / Teacher Requirements (Track to Meeting Them)
 

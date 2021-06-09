@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp, logout_bp
 from TheSmack.social_media.app import createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp, guestSmack_bp, smacks_bp
 from TheSmack.users.user import User
+from TheSmack.social_media.guest import Guest
 from TheSmack.minilabs.app import minilab_bp
 from TheSmack.bubblesort.app import bubblesort_bp
 from TheSmack.groups.app import groups_bp
@@ -44,13 +45,14 @@ app.register_blueprint(groups_bp, url_prefix='/groups')
 #home page route
 @app.route('/', methods=['GET'])
 def index():
+    most_recent_smack = Guest.query.order_by(Guest.name.desc()).all()
     # call to random joke web api
     #url = 'https://api.quotable.io/random'
     #response = requests.get(url)
     #st = response.json()
     #quote = st['content']
     #author = st['author']
-    return render_template("home.html") #quote=quote, author=author
+    return render_template("home.html", recent=most_recent_smack) #quote=quote, author=author
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -61,4 +63,4 @@ def frequently_asked_questions():
     return render_template("/faq.html")
 
 if __name__ == "__main__":
-    app.run(port='3000', host='127.0.0.1')
+    app.run(port='3000', host='127.0.0.1', debug=True)

@@ -2,6 +2,7 @@
 {% extends "layout.html" %}
 {% block pagecontent %}
 {% include 'buttonStyles.html' %}
+{% include 'tableStyles.html' %}
 
 <html>
 <body>
@@ -10,18 +11,31 @@
         <div class="pt-5 text-white">
             <header class="py-5 mt-5">
                 <h1 class="display-4">All Guest Smacks</h1>
-
             </header>
         </div>
 
+
+    <table class="container">
+        <thead>
+        <tr style="word-break:break-all">
+            <th width="400px"><h1>Name</h1></th>
+            <th width="400px"><h1>Emotion</h1></th>
+            <th width="400px"><h1>Update</h1></th>
+        </tr>
+        </thead>
+        <tbody>
+        {%for row in users%}
+        <tr style="word-break:break-all;">
+            <td>{{row.name}}</td>
+            <td>{{row.emotion}}</td>
+            <td>{{row.update}}</td>
+        </tr>
+        </tbody>
+        {% endfor %}
+    </table>
     </div>
 </div>
 
-
-<div class="row">
-    <!--smack content will be in the second row-->
-    <!--can organize by column-->
-</div>
 
 </body>
 

@@ -17,6 +17,22 @@ def delnorte_groups():
     return render_template("/groups/delNorte.html", users=users)
 
 
-@groups_bp.route('/mtCarmel', methods=['GET' 'POST'])
+@groups_bp.route('/mtCarmel')
 def mtCarmel_groups():
-    return render_template("/groups/mtCarmel.html")
+    users=get_users("Mountt Carmel Hight School")
+    return render_template("/groups/mtCarmel.html", users=users)
+
+@groups_bp.route('/ranchobernardo')
+def ranchobernard_groups():
+    users=get_users("Rancho Bernardo High School")
+    return render_template("/groups/ranchoBernardo.html", users=users)
+
+@groups_bp.route('/poway')
+def poway_groups():
+    users=get_users("Poway High School")
+    return render_template("/groups/poway.html", users=users)
+
+@groups_bp.route('/westview')
+def westview_groups():
+    users=get_users("Westview High School")
+    return render_template("/groups/westview.html", users=users)

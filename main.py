@@ -49,7 +49,7 @@ app.register_blueprint(groups_bp, url_prefix='/groups')
 #home page route
 @app.route('/', methods=['GET'])
 def index():
-    most_recent_smack = Guest.query.first()
+    most_recent_smack = Guest.query.order_by(Guest.post_id.desc()).first()
     # call to random quote web api
     url = 'https://api.quotable.io/random'
     response = requests.get(url)

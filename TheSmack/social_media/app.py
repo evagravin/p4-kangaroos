@@ -60,13 +60,13 @@ def trending():
 def results():
     return "Search results page"
 
-@createSmack_bp.route('/', methods=['POST', 'GET'])
+@createSmack_bp.route('/delnorte', methods=['POST', 'GET'])
 #@login_required
 def createSmack():
     if request.method == 'POST':
         emotion = request.form['emotion']
         update = request.form['update']
-        post_create(username, emotion, update)
+        post_create(emotion, update)
         return render_template("/users/profile.html")
     else:
         print('bar')

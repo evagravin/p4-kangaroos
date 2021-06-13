@@ -75,10 +75,11 @@ def createSmack():
 @guestSmack_bp.route('/', methods=['POST', 'GET'])
 def GuestSmack():
     if request.method == 'POST':
+        post_id = 1
         name = request.form['name']
         emotion = request.form['emotion']
         update = request.form['update']
-        guest_create(name, emotion, update)
+        guest_create(post_id, name, emotion, update)
         users = Guest.query.order_by(Guest.name.desc()).all()
         return render_template("/media/smacks.html", users=users)
     else:

@@ -16,16 +16,12 @@
         <div class="card-header" style="text-color: white">
             Most Recent Smack
         </div>
-        {%for row in recent%}
-        <tr style="word-break:break-all;">
-            <td>{{row.name}}</td>
-            <td>{{row.emotion}}</td>
-            <td>{{row.update}}</td>
-        </tr>
-        </tbody>
-        {% endfor %}
         <div class="card-body">
-
+            <ul class="list-group">
+                <li class="list-group-item" style="text-color: white"><u>Name:</u> {{recent.name}}</li>
+                <li class="list-group-item" style="text-color: white"><u>Emotion:</u> {{recent.emotion}}</li>
+                <li class="list-group-item" style="text-color: white"><u>Update:</u> {{recent.update}}</li>
+            </ul>
         </div>
         <div class="card-footer text-muted">
 

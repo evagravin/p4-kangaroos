@@ -8,3 +8,20 @@ flask_login
 flask_bootstrap
 
 requests~=2.25.1
+
+<div class="card border-light text-center col-3" style="width: 22rem; height: 20rem; margin: 3rem;">
+        <div class="card-header" style="text-color: white">
+            Trending Accounts
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li class="list-group-item" style="text-color: white"><img src="AvaBrooks.jpg">Ava Brooks</li>
+                <li class="list-group-item" style="text-color: white"><img src="EvaGravin.jpg">Eva Gravin</li>
+                <li class="list-group-item" style="text-color: white"><img src="LindaLong.jpg">Linda Long</li>
+                <li class="list-group-item" style="text-color: white"><img src="RisaIwazaki.jpg">Risa Iwazaki</li>
+            </ul>
+        </div>
+        <div class="card-footer text-muted">
+
+        </div>
+    </div>

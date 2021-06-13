@@ -1,5 +1,5 @@
 import requests
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from TheSmack.users.app import usermenu_bp, signup_bp, login_bp, profile_bp, logout_bp
 from TheSmack.social_media.app import createSmack_bp, smackDM_bp, searchresults_bp, aboutus_bp, smackmenu_bp, guestSmack_bp, smacks_bp
@@ -10,6 +10,9 @@ from TheSmack.bubblesort.app import bubblesort_bp
 from TheSmack.groups.app import groups_bp
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager
+from TheSmack.social_media.quote import Quotes
+import random
+
 
 
 app = Flask(__name__)
@@ -62,6 +65,13 @@ def load_user(user_id):
 @app.route('/faq')
 def frequently_asked_questions():
     return render_template("/faq.html")
+
+@app.route('/get_quote')
+def get_quote():
+    id = random.randint(1,34)
+    q = Quotes.query.get(id)
+    response = jsonify({'Quote': q.Quote})
+    return response, 200
 
 if __name__ == "__main__":
     app.run(port='3000', host='127.0.0.1')

@@ -56,7 +56,7 @@ def generator():
     # formatting variables from return
     setup = response.json()[0]['setup']
     punchline = response.json()[0]['punchline']
-    return render_template("home.html",  setup=setup, punchline=punchline)
+    return render_template("home.html", recent=most_recent_smack, setup=setup, punchline=punchline)
 
 @login_manager.user_loader
 def load_user(user_id):

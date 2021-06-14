@@ -40,10 +40,6 @@ db.init_app(app)
 def usermenu():
     return "Sign up/Login menu page"
 
-@profile_bp.route('/')
-def profile():
-    return "Profile page"
-
 
 @signup_bp.route('/' , methods = ['POST', 'GET'])
 def signup():
@@ -97,6 +93,7 @@ def login():
 
 
 @logout_bp.route('/')
+@login_required
 def logout():
     logout_user()
-    return render_template("home.html")
+    return redirect(url_for("home.html"))

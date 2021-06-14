@@ -38,10 +38,6 @@ def allSmacks():
     users = Guest.query.order_by(Guest.name.desc()).all()
     return render_template("/media/smacks.html", users=users)
 
-@login_required
-def logout():
-    logout_user()
-    return redirect(url_for('home.html'))
 
 @aboutus_bp.route('/')
 def aboutus():
@@ -90,7 +86,7 @@ def GuestSmack():
 
 @smackDM_bp.route('/')
 def smackDM():
-    return "Smack(DM) someone"
+    return render_template("/media/smackDM.html")
 
 
 

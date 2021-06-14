@@ -13,9 +13,13 @@ from flask_login import LoginManager
 from TheSmack.social_media.quote import Quotes
 import random
 
+from flask_socketio import SocketIO
+
 
 
 app = Flask(__name__)
+
+socketio = SocketIO(app)
 
 
 # database setup
@@ -72,6 +76,17 @@ def get_quote():
     q = Quotes.query.get(id)
     response = jsonify({'Quote': q.Quote})
     return response, 200
+
+
+def messageReceived(methods=['GET', 'POST']):
+    print('message  received.')
+
+@socketio.on('my event')
+def handle_my_custom_event(json, methods=['GET', 'POST']):
+    print('received my event: ' + str(json))
+    socketio.emit('my response', json, callback=messageReceived)
+
+
 
 if __name__ == "__main__":
     app.run(port='3000', host='127.0.0.1')

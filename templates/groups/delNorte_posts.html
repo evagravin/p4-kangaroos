@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{% block pagecontent %}
+{% include 'buttonStyles.html' %}
+{% include 'tableStyles.html' %}
+
+<html>
+<body>
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">Del Norte Group</h1>
+            <p style="font-size:20px; text-align:center" > See all the posts made by members of your group below!</p>
+        </header>
+    </div>
+
+    <table class="container">
+        <thead>
+        <tr style="word-break:break-all">
+            <th width="400px"><h1>Username</h1></th>
+            <th width="400px"><h1>Emotion</h1></th>
+            <th width="400px"><h1>Update</h1></th>
+        </tr>
+        </thead>
+        <tbody>
+        {%for row in users%}
+        <tr style="word-break:break-all;">
+            <td>{{row.username}}</td>
+            <td>{{row.bio}}</td>
+            {% endfor %}
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+
+{% endblock %}

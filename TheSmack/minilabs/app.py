@@ -41,7 +41,7 @@ def linda_minilab():
         num2 = int(request.form['num2'])
         sum = Sum(num1, num2)
         print(f"{sum.term1}")
-        return render_template("/minilabs/linda-risa-minilab.html", sum=sum)
+        return render_template("/minilabs/linda-minilab.html", sum=sum)
     return render_template("/minilabs/linda-minilab.html", sum=Sum(0,0))
 
 @minilab_bp.route('/eva' , methods=['GET', 'POST'])

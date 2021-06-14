@@ -86,7 +86,7 @@ def GuestSmack():
 
 @smackDM_bp.route('/')
 def smackDM():
-    return "Smack(DM) someone"
+    return render_template("/media/smackDM.html")
 
 
 

@@ -78,10 +78,6 @@ def get_quote():
     return response, 200
 
 
-@app.route('/')
-def smackDM():
-    return render_template('smackDM.html')
-
 def messageReceived(methods=['GET', 'POST']):
     print('message  received.')
 

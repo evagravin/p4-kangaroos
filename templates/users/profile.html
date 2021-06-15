@@ -41,10 +41,25 @@
                 <a href="/createsmack/delnorte" class="btn btn-outline-dark btn-sm btn-block">New Smack</a>
                 <div class="py-4 px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h5 class="mb-0">Recent Smacks</h5><a href="#" class="btn btn-link text-muted">Show all</a>
+                        <h5 class="mb-0">Posted Smacks</h5>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 mb-2 pr-lg-1"><img src="https://images.unsplash.com/photo-1469594292607-7bd90f8d3ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="" class="img-fluid rounded shadow-sm"></div>
+                        <div class="row" style="text-align:center">
+                            <div class="col-sm-12">
+                                {%for row in posts%}
+                                <div class="card text-center">
+                                    <div class="card-header" style="color:black">
+                                        {{row.username}}
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text" style="color:black">{{row.update}}</p>
+                                        <h5 class="card-text" style="color:black">Feeling...<u>{{row.emotion}}</u></h5>
+                                    </div>
+                                </div>
+                                <br>
+                                {% endfor %}
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a href="/" class="btn btn-outline-dark btn-sm btn-block">Logout</a>

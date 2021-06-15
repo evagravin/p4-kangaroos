@@ -3,7 +3,7 @@ from flask_login import login_user, login_required, logout_user
 from TheSmack.users.user import user_create, validate_user
 from TheSmack.users.custom import apology
 from flask_sqlalchemy import SQLAlchemy
-
+from TheSmack.social_media.post import get_posts
 
 usermenu_bp = Blueprint('usermenu', __name__,
                           template_folder='templates',
@@ -81,7 +81,8 @@ def login():
             login_user(user)
             session['user_name'] = user.username
             db.session.commit()
-            return render_template("users/profile.html", username=username, bio=user.bio, school=user.school)
+            posts = get_posts(session['user_name'])
+            return render_template("users/profile.html", username=username, bio=user.bio, school=user.school, posts=posts)
     else:
         print('Bar')
         #if validate_user = false, return login page

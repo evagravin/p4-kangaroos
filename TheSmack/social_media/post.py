@@ -26,6 +26,9 @@ def post_create(username, emotion, update):
     db.session.add(new_post)
     db.session.commit()
 
+def get_posts(username):
+    return Posts.query.filter_by(username=username).all()
+
 
 
 

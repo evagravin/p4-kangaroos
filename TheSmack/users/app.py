@@ -36,10 +36,6 @@ db = SQLAlchemy(app)
 db.init_app(app)
 
 
-@usermenu_bp.route('/')
-def usermenu():
-    return "Sign up/Login menu page"
-
 
 @signup_bp.route('/' , methods = ['POST', 'GET'])
 def signup():
@@ -82,8 +78,8 @@ def login():
         user = validate_user(username, password)
 
         if user:
-            #if validate_user = true, log user in and return profile.html template
             login_user(user)
+            session['user_name'] = user.username
             db.session.commit()
             return render_template("users/profile.html", username=username, bio=user.bio, school=user.school)
     else:

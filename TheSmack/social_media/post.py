@@ -19,10 +19,10 @@ class Posts(db.Model):
 
 
 #function creates post
-def post_create(post_id, username, emotion, update):
+def post_create(username, emotion, update):
     print('User name is ' + username + ' emotion is ' + emotion + ' update is ' + update)
 
-    new_post = Posts(post_id=post_id, username=username, emotion=emotion, update=update)
+    new_post = Posts(username=username, emotion=emotion, update=update)
     db.session.add(new_post)
     db.session.commit()
 

@@ -6,20 +6,28 @@
 </div>
 <div>
     <header class="py-5 mt-5">
-        <form action="/createsmack/" method="POST" id="post">
+        <form action=" " method="POST" id="post">
             <h1>Create a Smack</h1>
             <br>
             <div style="display:grid; grid-template-columns: 1fr 1fr; grid-column-gap: 50px;">
                 <fieldset>
                     <!-- made these fields required -->
                     <legend><span class="number" >1</span>Choose an Emotion:</legend>
-                        <input type="radio" name="emotion" value="Happy <p>&#x1F60A;</p> " /> Happy <p>&#x1F60A;</p>
+                    <input type="radio" name="emotion" required="required" value="Happy">Happy
                         <br>
-                        <input type="radio" name="emotion" value="Sad" /> Sad
+                        <input type="radio" name="emotion" required="required" value="Sad" /> Sad
                         <br>
-                        <input type="radio" name="emotion" value="Angry" /> Angry
+                        <input type="radio" name="emotion" required="required" value="Angry" /> Angry
                         <br>
-                        <input type="radio" name="emotion" value="Excited" /> Excited
+                        <input type="radio" name="emotion" required="required" value="Excited" /> Excited
+                        <br>
+                        <input type="radio" name="emotion" required="required" value="Tired" /> Tired
+                        <br>
+                        <input type="radio" name="emotion" required="required" value="Confused" /> Confused
+                        <br>
+                        <input type="radio" name="emotion" required="required" value="Exhausted" /> Exhausted
+                        <br>
+                        <input type="radio" name="emotion" required="required" value="Hungry" /> Hungry
                 </fieldset>
                 <fieldset>
                     <!--legend><span class="number">3</span>Upload a photo:</legend>

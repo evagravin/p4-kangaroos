@@ -1,7 +1,8 @@
-from flask import Blueprint, render_template, request, app, redirect, url_for
+from flask import Blueprint, render_template, request, app, redirect, url_for, session
 from flask_login import LoginManager,login_required, current_user, logout_user
-from TheSmack.social_media.post import post_create
+from TheSmack.social_media.post import post_create, Posts
 from TheSmack.social_media.guest import guest_create, Guest
+
 
 
 
@@ -59,11 +60,14 @@ def results():
 @createSmack_bp.route('/delnorte', methods=['POST', 'GET'])
 #@login_required
 def createSmack():
+    print("cat")
     if request.method == 'POST':
+        username = session['user_name']
+        print(username)
         emotion = request.form['emotion']
         update = request.form['update']
-        post_create(emotion, update)
-        return render_template("/users/profile.html")
+        post_create(username, emotion, update)
+        return render_template("/groups/delNorte_posts.html", posts = Posts.query.order_by(Posts.post_id.desc()).all())
     else:
         print('bar')
     return render_template("/media/smackPost.html")

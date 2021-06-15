@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, session
 from TheSmack.users.user import get_users
+from TheSmack.social_media.post import Posts
 
 
 groups_bp = Blueprint('groups', __name__,
@@ -18,7 +19,9 @@ def delnorte_groups():
 
 @groups_bp.route('/delnorte/posts')
 def delnorte_posts():
-    return render_template("/groups/delNorte_posts.html")
+    posts = Posts.query.order_by(Posts.post_id.desc()).all()
+    print(posts)
+    return render_template("/groups/delNorte_posts.html", posts=posts)
 
 
 @groups_bp.route('/mtCarmel')

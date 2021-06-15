@@ -14,27 +14,21 @@
         </header>
     </div>
 
+
     <div class="row">
         <div class="col-sm-6">
+            {%for row in posts%}
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title" style="color:black">Username</h5>
-                    <p class="card-text" style="color:black">Update</p>
-                    <a href="#" class="btn btn-primary">Emotion</a>
+                    <h5 class="card-title" style="color:black">{{row.username}}</h5>
+                    <p class="card-text" style="color:black">{{row.update}}</p>
+                    <a href="#" class="btn btn-primary">{{row.emotion}}</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title" style="color:black">Username</h5>
-                    <p class="card-text" style="color:black">Update</p>
-                    <a href="#" class="btn btn-primary">Emotion</a>
-                </div>
-            </div>
-        </div>
-    </div>
+        {% endfor %}
 </div>
+
 </body>
 </html>
 

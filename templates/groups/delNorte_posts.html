@@ -14,24 +14,26 @@
         </header>
     </div>
 
-    <table class="container">
-        <thead>
-        <tr style="word-break:break-all">
-            <th width="400px"><h1>Username</h1></th>
-            <th width="400px"><h1>Emotion</h1></th>
-            <th width="400px"><h1>Update</h1></th>
-        </tr>
-        </thead>
-        <tbody>
-        {%for row in users%}
-        <tr style="word-break:break-all;">
-            <td>{{row.username}}</td>
-            <td>{{row.bio}}</td>
-            {% endfor %}
-        </tr>
-
-        </tbody>
-    </table>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:black">Username</h5>
+                    <p class="card-text" style="color:black">Update</p>
+                    <a href="#" class="btn btn-primary">Emotion</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:black">Username</h5>
+                    <p class="card-text" style="color:black">Update</p>
+                    <a href="#" class="btn btn-primary">Emotion</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

@@ -36,10 +36,6 @@ db = SQLAlchemy(app)
 db.init_app(app)
 
 
-@usermenu_bp.route('/')
-def usermenu():
-    return "Sign up/Login menu page"
-
 
 @signup_bp.route('/' , methods = ['POST', 'GET'])
 def signup():

@@ -60,7 +60,12 @@ def generator():
     # formatting variables from return
     setup = response.json()[0]['setup']
     punchline = response.json()[0]['punchline']
-    return render_template("home.html", recent=most_recent_smack, setup=setup, punchline=punchline)
+    url = 'https://www.boredapi.com/api/activity'
+    response = requests.get(url)
+    st = response.json()
+    type = st['type']
+    activity = st['activity']
+    return render_template("home.html", recent=most_recent_smack, setup=setup, punchline=punchline, type=type, activity=activity)
 
 @login_manager.user_loader
 def load_user(user_id):

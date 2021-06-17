@@ -14,7 +14,7 @@ def groups():
 
 @groups_bp.route('/delnorte')
 def delnorte_groups():
-    users=get_users("Del Norte High School")
+    users = get_users("Del Norte High School")
     return render_template("/groups/delNorte.html", users=users)
 
 @groups_bp.route('/delnorte/posts')
